@@ -1,0 +1,8 @@
+[project]
+name = "yaml-sort-example"
+version = "1.0.0"
+description = "Example demonstrating YAML sorting capabilities in Python"
+requires-python = ">=3.10"
+dependencies = [
+    "pyyaml>=6.0.1",
+]
