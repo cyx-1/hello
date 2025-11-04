@@ -1,0 +1,361 @@
+======================================================================
+Example 1: DataFrame Creation and Basic Operations
+======================================================================
+
+DataFrame created from dictionary:
+      name  age           city  salary
+0    Alice   25       New York   70000
+1      Bob   30  San Francisco   85000
+2  Charlie   35    Los Angeles   90000
+3    David   28        Chicago   75000
+4      Eve   32         Boston   82000
+
+Shape: (5, 4)
+Columns: ['name', 'age', 'city', 'salary']
+
+Data types:
+name      object
+age        int64
+city      object
+salary     int64
+dtype: object
+
+======================================================================
+Example 2: Data Selection and Filtering
+======================================================================
+
+Select 'name' column:
+0      Alice
+1        Bob
+2    Charlie
+3      David
+4        Eve
+Name: name, dtype: object
+
+Select 'name' and 'salary' columns:
+      name  salary
+0    Alice   70000
+1      Bob   85000
+2  Charlie   90000
+3    David   75000
+4      Eve   82000
+
+Filter: People with age > 30:
+      name  age         city  salary
+2  Charlie   35  Los Angeles   90000
+4      Eve   32       Boston   82000
+
+Filter: People with age > 28 AND salary > 80000:
+      name  age           city  salary
+1      Bob   30  San Francisco   85000
+2  Charlie   35    Los Angeles   90000
+4      Eve   32         Boston   82000
+
+Using .loc[0, 'name']: Alice
+Using .iloc[0, 0]: Alice
+
+======================================================================
+Example 3: Data Manipulation and Transformation
+======================================================================
+
+Added 'bonus' column (10% of salary):
+      name  age           city  salary   bonus
+0    Alice   25       New York   70000  7000.0
+1      Bob   30  San Francisco   85000  8500.0
+2  Charlie   35    Los Angeles   90000  9000.0
+3    David   28        Chicago   75000  7500.0
+4      Eve   32         Boston   82000  8200.0
+
+Added 'salary_in_k' column:
+      name  salary  salary_in_k
+0    Alice   70000         70.0
+1      Bob   85000         85.0
+2  Charlie   90000         90.0
+3    David   75000         75.0
+4      Eve   82000         82.0
+
+Added 'name_length' column:
+      name  name_length
+0    Alice            5
+1      Bob            3
+2  Charlie            7
+3    David            5
+4      Eve            3
+
+Sort by salary (descending):
+      name  salary
+2  Charlie   90000
+1      Bob   85000
+4      Eve   82000
+3    David   75000
+0    Alice   70000
+
+======================================================================
+Example 4: Grouping and Aggregation
+======================================================================
+
+Sales DataFrame:
+  region product  sales  quantity
+0   East       A    100        10
+1   East       B    150        15
+2   West       A    200        20
+3   West       B    120        12
+4   East       A    130        13
+5   West       B    180        18
+6  North       A     90         9
+7  North       B    110        11
+
+Group by 'region' and sum:
+region
+East     380
+North    200
+West     500
+Name: sales, dtype: int64
+
+Group by 'region' and 'product', calculate mean:
+region  product
+East    A          115.0
+        B          150.0
+North   A           90.0
+        B          110.0
+West    A          200.0
+        B          150.0
+Name: sales, dtype: float64
+
+Multiple aggregations (sum, mean, count):
+       sales             quantity
+         sum        mean      sum
+region                           
+East     380  126.666667       38
+North    200  100.000000       20
+West     500  166.666667       50
+
+======================================================================
+Example 5: Handling Missing Data
+======================================================================
+
+DataFrame with missing values:
+     A    B    C
+0  1.0  NaN  1.0
+1  2.0  2.0  2.0
+2  NaN  3.0  3.0
+3  4.0  4.0  NaN
+4  5.0  5.0  5.0
+
+Missing values per column:
+A    1
+B    1
+C    1
+dtype: int64
+
+Fill missing values with 0:
+     A    B    C
+0  1.0  0.0  1.0
+1  2.0  2.0  2.0
+2  0.0  3.0  3.0
+3  4.0  4.0  0.0
+4  5.0  5.0  5.0
+
+Drop rows with any missing values:
+     A    B    C
+1  2.0  2.0  2.0
+4  5.0  5.0  5.0
+
+Forward fill (use previous value):
+     A    B    C
+0  1.0  NaN  1.0
+1  2.0  2.0  2.0
+2  2.0  3.0  3.0
+3  4.0  4.0  3.0
+4  5.0  5.0  5.0
+
+======================================================================
+Example 6: Merging and Joining DataFrames
+======================================================================
+
+Employees DataFrame:
+   emp_id     name  dept_id
+0       1    Alice       10
+1       2      Bob       20
+2       3  Charlie       10
+3       4    David       30
+
+Departments DataFrame:
+   dept_id    dept_name
+0       10        Sales
+1       20  Engineering
+2       30           HR
+3       40    Marketing
+
+Inner join on 'dept_id':
+   emp_id     name  dept_id    dept_name
+0       1    Alice       10        Sales
+1       2      Bob       20  Engineering
+2       3  Charlie       10        Sales
+3       4    David       30           HR
+
+Left join on 'dept_id':
+   emp_id     name  dept_id    dept_name
+0       1    Alice       10        Sales
+1       2      Bob       20  Engineering
+2       3  Charlie       10        Sales
+3       4    David       30           HR
+
+======================================================================
+Example 7: Time Series Operations
+======================================================================
+
+Date range:
+DatetimeIndex(['2024-01-01', '2024-01-02', '2024-01-03', '2024-01-04',
+               '2024-01-05', '2024-01-06', '2024-01-07', '2024-01-08',
+               '2024-01-09', '2024-01-10'],
+              dtype='datetime64[ns]', freq='D')
+
+Time series DataFrame:
+            value
+date             
+2024-01-01     99
+2024-01-02    100
+2024-01-03    116
+2024-01-04    109
+2024-01-05    115
+2024-01-06    115
+2024-01-07    138
+2024-01-08    129
+2024-01-09    131
+2024-01-10    137
+
+Resample to weekly frequency (mean):
+                 value
+date                  
+2024-01-07  113.142857
+2024-01-14  132.333333
+
+Rolling 3-day average:
+                 value
+date                  
+2024-01-01         NaN
+2024-01-02         NaN
+2024-01-03  105.000000
+2024-01-04  108.333333
+2024-01-05  113.333333
+2024-01-06  113.000000
+2024-01-07  122.666667
+2024-01-08  127.333333
+2024-01-09  132.666667
+2024-01-10  132.333333
+
+======================================================================
+Example 8: Statistical Operations
+======================================================================
+
+Basic statistics for original employee DataFrame:
+             age        salary
+count   5.000000      5.000000
+mean   30.000000  80400.000000
+std     3.807887   7956.129712
+min    25.000000  70000.000000
+25%    28.000000  75000.000000
+50%    30.000000  82000.000000
+75%    32.000000  85000.000000
+max    35.000000  90000.000000
+
+Correlation between age and salary:
+             age    salary
+age     1.000000  0.940717
+salary  0.940717  1.000000
+
+Value counts for 'city':
+city
+New York         1
+San Francisco    1
+Los Angeles      1
+Chicago          1
+Boston           1
+Name: count, dtype: int64
+
+======================================================================
+Example 9: String Operations
+======================================================================
+
+Original names:
+0      Alice
+1        Bob
+2    Charlie
+3      David
+4        Eve
+Name: name, dtype: object
+
+Uppercase names:
+0      ALICE
+1        BOB
+2    CHARLIE
+3      DAVID
+4        EVE
+Name: name, dtype: object
+
+Names containing 'a' (case-insensitive):
+0      Alice
+2    Charlie
+3      David
+Name: name, dtype: object
+
+Extract first 3 characters:
+0    Ali
+1    Bob
+2    Cha
+3    Dav
+4    Eve
+Name: name, dtype: object
+
+======================================================================
+Example 10: Advanced Indexing
+======================================================================
+
+DataFrame with 'name' as index:
+         age           city  salary   bonus  salary_in_k  name_length
+name                                                                 
+Alice     25       New York   70000  7000.0         70.0            5
+Bob       30  San Francisco   85000  8500.0         85.0            3
+Charlie   35    Los Angeles   90000  9000.0         90.0            7
+David     28        Chicago   75000  7500.0         75.0            5
+Eve       32         Boston   82000  8200.0         82.0            3
+
+DataFrame with multi-index:
+                sales  quantity
+region product                 
+East   A          100        10
+       B          150        15
+West   A          200        20
+       B          120        12
+East   A          130        13
+West   B          180        18
+North  A           90         9
+       B          110        11
+
+Access 'East' region data:
+         sales  quantity
+product                 
+A          100        10
+B          150        15
+A          130        13
+
+======================================================================
+Summary: Pandas Key Features Demonstrated
+======================================================================
+
+1. DataFrame Creation: Created DataFrames from dictionaries
+2. Data Selection: Used [], .loc, .iloc for selecting data
+3. Filtering: Applied boolean conditions to filter rows
+4. Transformation: Added columns, applied functions, sorted data
+5. Grouping: Used groupby() for aggregations
+6. Missing Data: Handled NaN values with fillna(), dropna()
+7. Merging: Combined DataFrames using merge()
+8. Time Series: Worked with dates, resampling, rolling windows
+9. Statistics: Computed descriptive statistics and correlations
+10. String Operations: Manipulated text data with .str accessor
+11. Indexing: Set single and multi-level indexes
+
+Pandas is the cornerstone of data analysis in Python, providing powerful
+and flexible data structures for working with structured data.
+
