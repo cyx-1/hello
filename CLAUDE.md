@@ -29,6 +29,7 @@ use Maven for Java dependency management.
         - if it's Java program
             - it needs to have a file name like Main<Topic>.java
                 - for example: MainBloombergBPipe.java
+        - topic should not include language version number such as: gil_314
     - a readme.md that displays the following:
         - important source code with line number
         - output of the program that correlates well with source code line number

@@ -14,14 +14,14 @@ This example demonstrates Python's `string.Template` class - a simpler, safer al
 ## Running the Example
 
 ```bash
-uv run python main_template-strings.py
+uv run python main_template_strings.py
 ```
 
 ## Source Code and Output Analysis
 
 ### 1. Basic Template String Usage
 
-**Source Code (main_template-strings.py:25-27):**
+**Source Code (main_template_strings.py:25-27):**
 ```python
 template = Template("Hello, $name! Welcome to $place.")
 result = template.substitute(name="Alice", place="Python Land")
@@ -43,7 +43,7 @@ Result:   Hello, Alice! Welcome to Python Land.
 
 ### 2. Safe Substitution vs Regular Substitution
 
-**Source Code (main_template-strings.py:45-53):**
+**Source Code (main_template_strings.py:45-53):**
 ```python
 template = Template("Name: $name, Age: $age, City: $city")
 partial_data = {"name": "Charlie", "age": 30}  # Missing 'city'
@@ -78,7 +78,7 @@ Result: Name: Charlie, Age: 30, City: $city      ← Line 53: $city left as-is
 
 ### 3. Using Braces ${} for Disambiguation
 
-**Source Code (main_template-strings.py:63-73):**
+**Source Code (main_template_strings.py:63-73):**
 ```python
 # Without braces - ambiguous
 template = Template("$name_file.txt")              # Line 63: Looks for 'name_file'
@@ -102,7 +102,7 @@ Scenario: Creating filenames with suffixes
    Template correctly uses: 'name' variable
 ```
 
-**Complex Example (main_template-strings.py:75-77):**
+**Complex Example (main_template_strings.py:75-77):**
 ```python
 template = Template("${prefix}_${type}_${id}_${suffix}.log")  # Line 75
 result = template.substitute(prefix="app", type="error",
@@ -124,7 +124,7 @@ Result:   app_error_12345_prod.log                ← Line 77: All variables cle
 
 ### 4. Custom Delimiters
 
-**Source Code (main_template-strings.py:106-114):**
+**Source Code (main_template_strings.py:106-114):**
 ```python
 # Problem: $ conflicts with dollar amounts
 text_with_dollars = "Price: $100, Discount: $discount_amount"  # Line 106
@@ -159,7 +159,7 @@ Result:   Price: $100, Discount: $20               ← Line 114: $100 is literal
 
 ### 5. Practical Use Case - Email Templates
 
-**Source Code (main_template-strings.py:150-168):**
+**Source Code (main_template_strings.py:150-168):**
 ```python
 email_template = Template("""
 Dear $customer_name,
@@ -210,7 +210,7 @@ The TechBooks Team
 
 ### 6. Template Strings vs F-strings
 
-**Source Code (main_template-strings.py:195-209):**
+**Source Code (main_template_strings.py:195-209):**
 ```python
 # F-string (evaluated immediately)
 fstring_result = f"Name: {name}, Age: {age}"        # Line 196: Requires variables in scope
@@ -248,7 +248,7 @@ Cons: Less powerful (no expressions), slightly verbose
 
 ### 7. Security Considerations
 
-**Source Code (main_template-strings.py:219-231):**
+**Source Code (main_template_strings.py:219-231):**
 ```python
 print("⚠️  DANGER: F-strings with user input (DON'T DO THIS)")
 print('user_input = "{__import__(\'os\').system(\'ls\')}"')
@@ -285,7 +285,7 @@ Result: User said: $name or ${name} or $malicious_code      ← Line 227: Treate
 
 ### 8. Configuration File Templates
 
-**Source Code (main_template-strings.py:242-275):**
+**Source Code (main_template_strings.py:242-275):**
 ```python
 config_template = Template("""
 [database]
