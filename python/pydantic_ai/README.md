@@ -40,10 +40,6 @@ This example requires **Python 3.9+** and uses inline script metadata for depend
 ```bash
 # Run with uv (recommended)
 uv run python/pydantic_ai/main_pydantic_agent.py
-
-# Or install dependencies manually
-pip install "pydantic-ai>=0.0.14" "pydantic>=2.0.0"
-python python/pydantic_ai/main_pydantic_agent.py
 ```
 
 ## Code Structure
