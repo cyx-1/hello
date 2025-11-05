@@ -134,4 +134,8 @@ dmypy.json
 *.ear
 .gradle/
 build/
-target/milvus_demo.db
+target/
+
+# Milvus database files
+*.db
+milvus_demo.db
