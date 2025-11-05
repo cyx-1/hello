@@ -14,13 +14,13 @@ B-PIPE allows applications to:
 
 **Note:** This is an illustration that shows the expected behavior. Running this code requires:
 - Access to Bloomberg B-PIPE infrastructure
-- The `blpapi` Python package (`pip install blpapi`)
+- The `blpapi` Python package (automatically installed via inline script metadata)
 - Valid Bloomberg credentials and data entitlements
 
 ## Running the Example
 
 ```bash
-uv run python python/bloomberg-bpipe/main_bloomberg_bpipe.py
+uv run main_bloomberg_bpipe.py
 ```
 
 ## Key Concepts
@@ -556,13 +556,8 @@ In production code, you should handle:
 ## Real-World Implementation Notes
 
 ### Dependencies
-```bash
-# Install Bloomberg API
-pip install blpapi
-
-# Or with uv
-uv add blpapi
-```
+Dependencies are specified using inline script metadata in the Python file.
+Run with `uv run main_bloomberg_bpipe.py` for automatic dependency installation.
 
 ### Minimal Working Example
 ```python

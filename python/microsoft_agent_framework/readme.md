@@ -31,22 +31,14 @@ This example demonstrates **Microsoft Agent Framework**, the unified successor t
 
 ## Installation
 
-```bash
-# Core framework (preview)
-pip install agent-framework --pre
-
-# Optional Azure AI support
-pip install agent-framework-azure-ai --pre
-
-# Optional Redis state store
-pip install agent-framework-redis --pre
-```
+Dependencies are specified using inline script metadata in the Python file.
+No separate installation needed - `uv` will handle dependencies automatically.
 
 ## Running the Example
 
 ```bash
-# Using uv (recommended)
-uv run python main_microsoft_agent_framework.py
+# Using uv (handles dependencies automatically)
+uv run main_microsoft_agent_framework.py
 
 # Or with standard Python (after installing dependencies)
 python main_microsoft_agent_framework.py
@@ -736,9 +728,8 @@ INSTALLATION
 Install the framework:
   pip install agent-framework --pre
 
-Optional components:
-  pip install agent-framework-azure-ai --pre  # For Azure AI support
-  pip install agent-framework-redis --pre     # For Redis state store
+All dependencies are managed via inline script metadata.
+Use 'uv run main_microsoft_agent_framework.py' to run with automatic dependency installation.
 
 ================================================================================
 DOCUMENTATION & RESOURCES

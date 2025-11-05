@@ -420,11 +420,9 @@ export AWS_REGION=us-east-1
 
 ### ImportError
 ```bash
-# Ensure uv is installed
-pip install uv
-
+# Dependencies are managed via inline script metadata
 # Run with uv to auto-install dependencies
-uv run python main_aws_bedrock_agents.py
+uv run main_aws_bedrock_agents.py
 ```
 
 ---

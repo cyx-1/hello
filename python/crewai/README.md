@@ -46,15 +46,13 @@ This illustration showcases:
 - **CrewAI**: >= 0.80.0 (for production use)
 - **CrewAI Tools**: >= 0.12.0 (for production use)
 
-**Note**: This demonstration version simulates CrewAI concepts without requiring API keys. For production use with actual LLM integration:
-```bash
-pip install crewai crewai-tools
-```
+**Note**: Dependencies are specified using inline script metadata in the Python file.
+No separate installation needed - `uv` will handle dependencies automatically.
 
 ## Running the Example
 
 ```bash
-uv run python main_crewai.py
+uv run main_crewai.py
 ```
 
 ---
@@ -703,12 +701,10 @@ CrewAI excels in:
 For production use with real LLM integration:
 
 ```bash
-# Install CrewAI
-pip install crewai crewai-tools
-
 # Configure API keys (example for OpenAI)
 export OPENAI_API_KEY="your-api-key"
 
+# Dependencies are automatically installed via inline script metadata
 # Update imports in code
 from crewai import Agent, Crew, Process, Task  # Use real library
 ```

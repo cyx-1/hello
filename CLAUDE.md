@@ -28,6 +28,8 @@ use Maven for Java dependency management.
                 - for example: main_bloomberg_bpipe.py
             - do not create any pyproject.toml files
             - use inline script metadata to specify required dependencies
+            - do not mention pip install
+            - do not create .python-version
         - if it's Java program
             - it needs to have a file name like Main<Topic>.java
                 - for example: MainBloombergBPipe.java
