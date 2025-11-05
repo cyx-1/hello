@@ -1,3 +1,10 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "langgraph>=0.2.59",
+#     "langchain-core>=0.3.29",
+# ]
+# ///
 """
 LangGraph Example: Building Stateful Multi-Actor Applications
 

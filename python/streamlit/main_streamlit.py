@@ -1,3 +1,11 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "numpy>=2.3.4",
+#     "pandas>=2.3.3",
+#     "streamlit>=1.51.0",
+# ]
+# ///
 """
 Streamlit Example: Building Interactive Web Applications
 
@@ -46,11 +54,14 @@ st.markdown("""
 - `Code snippets`
 - [Links](https://streamlit.io)
 """)
-st.code("""
+st.code(
+    """
 st.write("Hello World")
 st.markdown("**Bold** text")
 st.code("print('Code block')")
-""", language="python")
+""",
+    language="python",
+)
 st.divider()
 
 
@@ -80,17 +91,12 @@ with col2:
 
     # Selectbox
     city = st.selectbox(
-        "Choose a city:",
-        ["New York", "London", "Tokyo", "Paris", "Sydney"]
+        "Choose a city:", ["New York", "London", "Tokyo", "Paris", "Sydney"]
     )
     st.write(f"📍 Selected: {city}")
 
     # Radio buttons
-    theme = st.radio(
-        "Select theme:",
-        ["Light", "Dark", "Auto"],
-        horizontal=True
-    )
+    theme = st.radio("Select theme:", ["Light", "Dark", "Auto"], horizontal=True)
     st.write(f"🎨 Theme: {theme}")
 
     # Checkbox
@@ -121,7 +127,7 @@ with col3:
 st.metric(
     label="Counter Value",
     value=st.session_state.counter,
-    delta=1 if st.session_state.counter > 0 else 0
+    delta=1 if st.session_state.counter > 0 else 0,
 )
 st.divider()
 
@@ -131,25 +137,25 @@ st.header("4️⃣ Data Visualization")
 
 # Generate sample data
 chart_type = st.radio(
-    "Select chart type:",
-    ["Line Chart", "Area Chart", "Bar Chart"],
-    horizontal=True
+    "Select chart type:", ["Line Chart", "Area Chart", "Bar Chart"], horizontal=True
 )
 
 # Create sample data
-dates = pd.date_range(start=datetime.now() - timedelta(days=30), periods=30, freq='D')
-df_chart = pd.DataFrame({
-    'Date': dates,
-    'Sales': np.random.randint(100, 500, 30),
-    'Revenue': np.random.randint(1000, 5000, 30),
-})
+dates = pd.date_range(start=datetime.now() - timedelta(days=30), periods=30, freq="D")
+df_chart = pd.DataFrame(
+    {
+        "Date": dates,
+        "Sales": np.random.randint(100, 500, 30),
+        "Revenue": np.random.randint(1000, 5000, 30),
+    }
+)
 
 if chart_type == "Line Chart":
-    st.line_chart(df_chart.set_index('Date'))
+    st.line_chart(df_chart.set_index("Date"))
 elif chart_type == "Area Chart":
-    st.area_chart(df_chart.set_index('Date'))
+    st.area_chart(df_chart.set_index("Date"))
 else:
-    st.bar_chart(df_chart.set_index('Date'))
+    st.bar_chart(df_chart.set_index("Date"))
 
 st.divider()
 
@@ -158,12 +164,14 @@ st.divider()
 st.header("5️⃣ Data Display")
 
 # Create sample dataframe
-df_display = pd.DataFrame({
-    'Product': ['Laptop', 'Mouse', 'Keyboard', 'Monitor', 'Headphones'],
-    'Price': [1200, 25, 75, 350, 150],
-    'Stock': [15, 120, 85, 30, 45],
-    'Rating': [4.5, 4.2, 4.7, 4.6, 4.3],
-})
+df_display = pd.DataFrame(
+    {
+        "Product": ["Laptop", "Mouse", "Keyboard", "Monitor", "Headphones"],
+        "Price": [1200, 25, 75, 350, 150],
+        "Stock": [15, 120, 85, 30, 45],
+        "Rating": [4.5, 4.2, 4.7, 4.6, 4.3],
+    }
+)
 
 tab1, tab2, tab3 = st.tabs(["📊 Table", "📈 Metrics", "🗂️ JSON"])
 
@@ -178,14 +186,16 @@ with tab2:
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Total Products", len(df_display))
     col2.metric("Avg Price", f"${df_display['Price'].mean():.0f}")
-    col3.metric("Total Stock", df_display['Stock'].sum())
+    col3.metric("Total Stock", df_display["Stock"].sum())
     col4.metric("Avg Rating", f"{df_display['Rating'].mean():.2f}⭐")
 
 with tab3:
-    st.json({
-        'products': df_display.to_dict('records'),
-        'timestamp': datetime.now().isoformat(),
-    })
+    st.json(
+        {
+            "products": df_display.to_dict("records"),
+            "timestamp": datetime.now().isoformat(),
+        }
+    )
 
 st.divider()
 
@@ -196,10 +206,13 @@ st.header("6️⃣ Layout Components")
 with st.expander("📦 Click to expand/collapse"):
     st.write("This is an expandable section!")
     st.write("You can hide/show content dynamically.")
-    st.code("""
+    st.code(
+        """
 with st.expander("Title"):
     st.write("Hidden content")
-    """, language="python")
+    """,
+        language="python",
+    )
 
 with st.container():
     st.info("💡 **Container**: Groups elements together")
@@ -224,10 +237,9 @@ with st.sidebar:
     st.subheader("📝 Chat Example")
     user_message = st.text_input("Type a message:", key="chat_input")
     if st.button("Send") and user_message:
-        st.session_state.messages.append({
-            'time': datetime.now().strftime("%H:%M:%S"),
-            'text': user_message
-        })
+        st.session_state.messages.append(
+            {"time": datetime.now().strftime("%H:%M:%S"), "text": user_message}
+        )
 
     if st.session_state.messages:
         st.write("**Messages:**")
@@ -237,4 +249,6 @@ with st.sidebar:
 
 # Footer
 st.divider()
-st.caption("🎉 Built with Streamlit - Turn data scripts into shareable web apps in minutes!")
+st.caption(
+    "🎉 Built with Streamlit - Turn data scripts into shareable web apps in minutes!"
+)

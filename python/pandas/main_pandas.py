@@ -1,3 +1,10 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "pandas>=2.0.0",
+#     "numpy>=1.24.0",
+# ]
+# ///
 """
 Pandas Example: Comprehensive Data Analysis Library Demonstration
 
@@ -176,7 +183,10 @@ employees = pd.DataFrame(
 )
 
 departments = pd.DataFrame(
-    {"dept_id": [10, 20, 30, 40], "dept_name": ["Sales", "Engineering", "HR", "Marketing"]}
+    {
+        "dept_id": [10, 20, 30, 40],
+        "dept_name": ["Sales", "Engineering", "HR", "Marketing"],
+    }
 )
 
 print("\nEmployees DataFrame:")

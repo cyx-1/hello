@@ -1,3 +1,9 @@
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "fastmcp>=2.0.0",
+# ]
+# ///
 """
 FastMCP Example: Building Model Context Protocol (MCP) Servers
 
@@ -218,7 +224,7 @@ async def process_items(count: int, context: Context) -> str:
 
         # Report progress
         progress = i / count
-        log(f"   📊 Progress: {i}/{count} ({progress*100:.0f}%)")
+        log(f"   📊 Progress: {i}/{count} ({progress * 100:.0f}%)")
 
     result = f"Successfully processed {count} items"
     log("✅ Tool 'process_items' completed")

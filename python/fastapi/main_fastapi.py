@@ -1,3 +1,11 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "fastapi>=0.115.0",
+#     "uvicorn>=0.32.0",
+#     "httpx>=0.28.0",
+# ]
+# ///
 """
 FastAPI Web Framework Example: Modern, Fast, and Type-Safe API Development
 

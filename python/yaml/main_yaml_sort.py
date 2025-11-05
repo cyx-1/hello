@@ -1,3 +1,9 @@
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "pyyaml>=6.0.1",
+# ]
+# ///
 """
 YAML Sorting Example: Demonstrating how to sort elements in YAML files
 

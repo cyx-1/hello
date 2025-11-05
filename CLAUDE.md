@@ -26,6 +26,8 @@ use Maven for Java dependency management.
             - it needs to be runnable by uv
             - it needs to have a file name like main_<topic>.py
                 - for example: main_bloomberg_bpipe.py
+            - do not create any pyproject.toml files
+            - use inline script metadata to specify required dependencies
         - if it's Java program
             - it needs to have a file name like Main<Topic>.java
                 - for example: MainBloombergBPipe.java

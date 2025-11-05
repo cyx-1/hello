@@ -1,3 +1,9 @@
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "pytest>=8.4.2",
+# ]
+# ///
 """
 Pytest Example: Comprehensive Testing Framework Demonstration
 

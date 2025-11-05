@@ -1,3 +1,10 @@
+# /// script
+# requires-python = ">=3.8"
+# dependencies = [
+#     "boto3>=1.34.0",
+#     "moto[s3]>=5.0.0",
+# ]
+# ///
 """
 Boto3 AWS S3 Example: Comprehensive S3 Operations
 

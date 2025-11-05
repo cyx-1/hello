@@ -1,3 +1,9 @@
+# /// script
+# requires-python = ">=3.9"
+# dependencies = [
+#     "boto3>=1.34.0",
+# ]
+# ///
 """
 AWS Bedrock Python Example
 
