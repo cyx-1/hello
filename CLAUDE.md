@@ -24,17 +24,19 @@ use Maven for Java dependency management.
         - if it's a python program
             - it needs to be free of any ruff errors
             - it needs to be runnable by uv
-            - it needs to have a file name like main_<topic>.py
+            - it needs to have a single file name like main_<topic>.py
                 - for example: main_bloomberg_bpipe.py
             - do not create any pyproject.toml files
             - use inline script metadata to specify required dependencies
             - do not mention pip install
             - do not create .python-version
         - if it's Java program
-            - it needs to have a file name like Main<Topic>.java
+            - it needs to have a single file name like Main<Topic>.java, camelCase convention with Main as prefix
                 - for example: MainBloombergBPipe.java
+            - it needs a pom.xml to establish dependencies
         - topic should not include language version number such as: gil_314
-    - a readme.md that displays the following:
+        - no other source code is needed other than the main entrypoint
+    - a README.md that displays the following:
         - important source code with line number
         - output of the program that correlates well with source code line number
         - annotation of output and source code with clear guiding comments referencing source code and output line number
