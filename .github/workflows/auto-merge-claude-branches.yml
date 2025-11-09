@@ -1,0 +1,67 @@
+name: Auto-merge Claude Feature Branches
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Get branch name
+        id: branch
+        run: |
+          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+          echo "name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+          echo "Branch to merge: $BRANCH_NAME"
+      
+      - name: Merge to main
+        id: merge
+        run: |
+          git fetch origin main
+          git checkout main
+          
+          # Attempt to merge the feature branch
+          if git merge --no-edit origin/${{ steps.branch.outputs.name }}; then
+            echo "merge_success=true" >> $GITHUB_OUTPUT
+            echo "✅ Merge successful"
+          else
+            echo "merge_success=false" >> $GITHUB_OUTPUT
+            echo "❌ Merge failed - conflicts detected"
+            git merge --abort
+            exit 1
+          fi
+      
+      - name: Push merged changes
+        if: steps.merge.outputs.merge_success == 'true'
+        run: |
+          git push origin main
+          echo "✅ Changes pushed to main"
+      
+      - name: Delete feature branch
+        if: steps.merge.outputs.merge_success == 'true'
+        run: |
+          git push origin --delete ${{ steps.branch.outputs.name }}
+          echo "✅ Feature branch deleted: ${{ steps.branch.outputs.name }}"
+      
+      - name: Report failure
+        if: failure()
+        run: |
+          echo "⚠️ Auto-merge failed for branch: ${{ steps.branch.outputs.name }}"
+          echo "The branch will be preserved for manual resolution."
