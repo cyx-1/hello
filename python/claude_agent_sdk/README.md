@@ -12,7 +12,7 @@ This example demonstrates all key features of the **Claude Agent SDK** (formerly
 ## Running the Code
 
 ```bash
-uv run main_agent_sdk.py
+uv run main_claude_agent_sdk.py
 ```
 
 The code uses inline script metadata (PEP 723) to automatically manage dependencies with `uv`.
