@@ -16,6 +16,7 @@ use Maven for Java dependency management.
 
 ## Project Structure
 
+- all commits to git should use configuration "Dave Chen" as author and "yexinchen@gmail.com" as email
 - this project is going to illustrate many examples of code sample
 - key folders such as python, java, rust, typescript will organize code samples across languages
 - for example, the python/asyncio folder will be a standalone project that showcases the ability of asyncio
