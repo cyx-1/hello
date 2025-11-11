@@ -30,7 +30,7 @@ Before running this code, you need to register an application in Azure AD:
 
 ```bash
 # Execute using uv (recommended)
-uv run python main_graph_api_email.py
+uv run python main_msgraph_api_email.py
 ```
 
 ## Source Code
