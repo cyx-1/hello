@@ -139,3 +139,6 @@ target/
 # Milvus database files
 *.db
 milvus_demo.db
+
+# Bokeh generated HTML output files
+bokeh/*.html
