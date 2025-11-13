@@ -63,7 +63,7 @@ use Maven for Java dependency management.
 
 ## Company Research
 - triggered by requests such as "Research on a company named XYZ"
-- key folder called company will contain research notes on the company
+- key folder called "company" will contain research notes on the company. For example ./company/IBM.md
 - first step is to find out whether the company is a public or private company
 - if it's a public company
     - list a table showing annual financials such as revenue, margin, net income for last 3 years
@@ -80,6 +80,6 @@ use Maven for Java dependency management.
     - list out monthly average user for online services
     - list out key annual events that showcase product for this company
 - list out main competitors and how each is trying to diffentiate
-- save the information into a markdown file in the root folder (ie. Microsoft.md, OpenAI.md, nVidia.md)
+- save the information into a markdown file in the "company" folder (ie. Microsoft.md, OpenAI.md, nVidia.md)
     - the markdown file should end with an last update timestamp
 - when updating the content, use the last update timestamp to determine content to be retrieved beyond what is already there
