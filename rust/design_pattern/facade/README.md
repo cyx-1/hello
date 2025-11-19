@@ -408,10 +408,10 @@ Rust's ownership system ensures the facade owns its subsystems, preventing dangl
 
 ```bash
 # Compile
-rustc main_facade.rs -o main_facade
+rustc main_facade.rs -o main_facade.exe
 
 # Run
-./main_facade
+./main_facade.exe
 ```
 
 No external dependencies required. Compatible with Rust stable (1.0+).

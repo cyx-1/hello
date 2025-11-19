@@ -319,7 +319,7 @@ Demonstrates that the same decorator type can be applied multiple times (double 
 ## Compilation and Execution
 
 ```bash
-rustc main_decorator.rs -o main_decorator && ./main_decorator
+rustc main_decorator.rs -o main_decorator.exe && ./main_decorator.exe
 ```
 
 This code is compatible with Rust stable (tested with rustc 1.70+). No external dependencies are required.

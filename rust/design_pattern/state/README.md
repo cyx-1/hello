@@ -513,5 +513,5 @@ The `Document` struct holds the state and delegates operations:
 ## Compilation and Execution
 
 ```bash
-rustc main_state.rs -o main_state && ./main_state
+rustc main_state.rs -o main_state.exe && ./main_state.exe
 ```

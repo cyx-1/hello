@@ -348,7 +348,7 @@ This pattern is ideal for:
 This code can be compiled with standard rustc:
 
 ```bash
-rustc main_memento.rs -o main_memento && ./main_memento
+rustc main_memento.rs -o main_memento.exe && ./main_memento.exe
 ```
 
 No external dependencies are required beyond the Rust standard library.

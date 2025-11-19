@@ -371,7 +371,7 @@ The type system ensures that:
 This code can be compiled with standard rustc:
 
 ```bash
-rustc main_proxy.rs -o main_proxy && ./main_proxy
+rustc main_proxy.rs -o main_proxy.exe && ./main_proxy.exe
 ```
 
 No external dependencies or specific Rust version required (tested with Rust stable).

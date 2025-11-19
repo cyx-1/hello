@@ -193,8 +193,8 @@ The Singleton pattern ensures a class has only one instance and provides a globa
 ## How to Run
 
 ```bash
-rustc main_singleton.rs -o main_singleton
-./main_singleton
+rustc main_singleton.rs -o main_singleton.exe
+./main_singleton.exe
 ```
 
 Or with Cargo in a project:

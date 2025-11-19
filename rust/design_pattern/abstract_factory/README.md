@@ -430,7 +430,7 @@ Unlike traditional OOP languages, Rust implements the Abstract Factory pattern u
 ### Compilation and Execution
 
 ```bash
-rustc main_abstract_factory.rs -o main_abstract_factory && ./main_abstract_factory
+rustc main_abstract_factory.rs -o main_abstract_factory.exe && ./main_abstract_factory.exe
 ```
 
 **Requirements**: Rust 1.0+ (uses stable features only)

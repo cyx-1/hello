@@ -412,5 +412,6 @@ children: RefCell<Vec<Rc<dyn FileSystemComponent>>>
 ## Rust-Specific Considerations
 
 - **Thread Safety**: Replace `Rc<RefCell<T>>` with `Arc<Mutex<T>>` for multi-threaded use
-- **Compile with**: `rustc main_composite.rs -o main_composite`
+- **Compile with**: `rustc main_composite.rs -o main_composite.exe`
+- **Run with**: `./main_composite.exe`
 - **Rust Version**: Compatible with Rust 1.0+ (stable)

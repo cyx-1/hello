@@ -260,7 +260,7 @@ This section demonstrates Rust's dynamic dispatch by storing different concrete 
 This code can be compiled with standard rustc:
 
 ```bash
-rustc main_factory_method.rs -o main_factory_method && ./main_factory_method
+rustc main_factory_method.rs -o main_factory_method.exe && ./main_factory_method.exe
 ```
 
 No external dependencies are required.

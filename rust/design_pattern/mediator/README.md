@@ -349,7 +349,7 @@ Two-way registration: the user gets a reference to the mediator, and the mediato
 ### Compile and Run
 
 ```bash
-rustc main_mediator.rs -o main_mediator && ./main_mediator
+rustc main_mediator.rs -o main_mediator.exe && ./main_mediator.exe
 ```
 
 This code compiles with standard Rust (rustc) and requires no external dependencies.

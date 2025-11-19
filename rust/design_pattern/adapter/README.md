@@ -350,8 +350,8 @@ The Adapter pattern allows incompatible interfaces to work together by wrapping 
 ## How to Run
 
 ```bash
-rustc main_adapter.rs -o main_adapter
-./main_adapter
+rustc main_adapter.rs -o main_adapter.exe
+./main_adapter.exe
 ```
 
 Or with Cargo in a project:

@@ -373,7 +373,7 @@ Clones the collection, then uses consuming `into_iter()` which moves ownership. 
 
 Compile and run:
 ```bash
-rustc main_iterator.rs -o main_iterator && ./main_iterator
+rustc main_iterator.rs -o main_iterator.exe && ./main_iterator.exe
 ```
 
 No external dependencies required. Works with Rust stable (tested with rustc 1.70+).

@@ -450,7 +450,7 @@ impl Clone for MyStruct {
 ## Compilation
 
 ```bash
-rustc main_prototype.rs -o main_prototype && ./main_prototype
+rustc main_prototype.rs -o main_prototype.exe && ./main_prototype.exe
 ```
 
 **Note**: This code uses only Rust standard library features and compiles with any stable Rust version (1.0+).

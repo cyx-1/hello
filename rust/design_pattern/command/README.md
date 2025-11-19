@@ -397,7 +397,7 @@ Demonstrates the complete workflow:
 
 Compile and run with:
 ```bash
-rustc main_command.rs -o main_command && ./main_command
+rustc main_command.rs -o main_command.exe && ./main_command.exe
 ```
 
 No external dependencies are required. The code uses only Rust standard library components.

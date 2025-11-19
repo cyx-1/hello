@@ -463,10 +463,10 @@ Demonstrates the pattern with five progressively complex examples:
 
 ```bash
 # Compile
-rustc main_interpreter.rs -o main_interpreter
+rustc main_interpreter.rs -o main_interpreter.exe
 
 # Run
-./main_interpreter
+./main_interpreter.exe
 ```
 
 No external dependencies required - uses only the Rust standard library.

@@ -445,8 +445,8 @@ This makes it easy to add, remove, or reorder handlers without modifying existin
 This code can be compiled with standard `rustc`:
 
 ```bash
-rustc main_chain_of_responsibility.rs -o main_chain_of_responsibility
-./main_chain_of_responsibility
+rustc main_chain_of_responsibility.rs -o main_chain_of_responsibility.exe
+./main_chain_of_responsibility.exe
 ```
 
 No external dependencies are required. The code uses only the Rust standard library.

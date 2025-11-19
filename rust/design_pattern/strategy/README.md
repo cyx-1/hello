@@ -301,7 +301,7 @@ Demonstrates strategy switching during runtime without modifying the context cla
 This code compiles with standard rustc without any external dependencies:
 
 ```bash
-rustc main_strategy.rs -o main_strategy && ./main_strategy
+rustc main_strategy.rs -o main_strategy.exe && ./main_strategy.exe
 ```
 
 No specific Rust version is required beyond Rust 1.0, as it uses only stable language features.
