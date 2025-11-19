@@ -1,0 +1,13 @@
+{
+  "name": "state-pattern",
+  "version": "1.0.0",
+  "description": "State design pattern demonstration in TypeScript",
+  "main": "main_state.ts",
+  "scripts": {
+    "start": "npx tsx main_state.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "singleton-pattern",
+  "version": "1.0.0",
+  "description": "Singleton design pattern demonstration in TypeScript",
+  "main": "main_singleton.ts",
+  "scripts": {
+    "start": "npx tsx main_singleton.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

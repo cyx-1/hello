@@ -1,0 +1,13 @@
+{
+  "name": "abstract-factory-pattern",
+  "version": "1.0.0",
+  "description": "Abstract Factory design pattern demonstration in TypeScript",
+  "main": "main_abstract_factory.ts",
+  "scripts": {
+    "start": "npx tsx main_abstract_factory.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

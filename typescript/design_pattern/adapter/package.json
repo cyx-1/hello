@@ -1,0 +1,13 @@
+{
+  "name": "adapter-pattern",
+  "version": "1.0.0",
+  "description": "Adapter design pattern demonstration in TypeScript",
+  "main": "main_adapter.ts",
+  "scripts": {
+    "start": "npx tsx main_adapter.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

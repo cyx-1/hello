@@ -1,0 +1,17 @@
+{
+  "name": "bridge-pattern",
+  "version": "1.0.0",
+  "description": "TypeScript implementation of the Bridge design pattern",
+  "main": "main_bridge.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node main_bridge.js",
+    "dev": "ts-node main_bridge.ts"
+  },
+  "keywords": ["bridge", "design-pattern", "typescript"],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}

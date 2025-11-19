@@ -7,8 +7,7 @@
 **Founded:** December 1982
 **Founders:** John Warnock and Charles Geschke (former Xerox employees)
 **Headquarters:** San Jose, California
-**Market Capitalization:** $139.49 billion (as of November 2025)
-**Current Stock Price:** $337.05 USD (as of November 2025)
+**Fiscal Year:** Ends in November (last Friday of November)
 
 Adobe Inc. is a global technology company that provides digital marketing and media solutions. The company operates through three main segments: Digital Media, Digital Experience, and Publishing and Advertising.
 
@@ -16,131 +15,209 @@ Adobe Inc. is a global technology company that provides digital marketing and me
 
 ## Financial Performance
 
-### Annual Financials (Fiscal Years)
+### Annual Financials (FY2022-FY2024)
 
-| Fiscal Year | Revenue | Net Income | Net Profit Margin | YoY Revenue Growth |
-|-------------|---------|------------|-------------------|-------------------|
-| FY 2022 | $17.606B | $4.756B | 27.0% | - |
-| FY 2023 | $19.409B | $5.428B | 28.0% | 10.24% |
-| FY 2024 | $21.505B | $5.560B | 25.9% | 10.8% |
+| Fiscal Year | Revenue | Operating Income (GAAP) | Operating Margin | Net Income (GAAP) | Net Profit Margin | EPS (Diluted) |
+|-------------|---------|------------------------|------------------|-------------------|-------------------|---------------|
+| FY 2022 (Dec 2022) | $17.61B | $6.10B | 34.6% | $4.76B | 27.0% | $10.10 |
+| FY 2023 (Dec 2023) | $19.41B | $6.58B | 33.9% | $5.43B | 28.0% | $11.82 |
+| FY 2024 (Nov 2024) | $21.51B | $6.74B | 31.3% | $5.56B | 25.9% | $12.36 |
 
-Adobe has demonstrated consistent revenue growth over the past three years, with total revenue increasing from $17.6B to $21.5B (22% cumulative growth). Net income has also grown steadily, maintaining strong profit margins in the 26-28% range.
-
-### Quarterly Financials (Recent Quarters)
-
-| Quarter | Revenue | YoY Growth | Notes |
-|---------|---------|------------|-------|
-| Q3 FY2024 | $5.41B | 11% | Strong performance across all segments |
-| Q4 FY2024 | $5.61B | 11% | Record quarter for FY2024 |
-| Q1 FY2025 | - | - | - |
-| Q2 FY2025 | $5.77-5.82B (guided) | - | Guidance provided |
-| Q3 FY2025 | $5.99B | 10% | Record quarter with strong AI adoption |
-
-**FY2025 Full Year Guidance:** $23.65-23.70 billion in total revenue
-
-Adobe's quarterly performance shows consistent double-digit growth, with Q3 FY2025 achieving record revenue of $5.99B. The company has raised its full-year guidance, reflecting strong demand for its AI-powered products.
-
----
-
-## Revenue by Geography (Fiscal Year 2024)
-
-| Region | Revenue | % of Total | YoY Growth |
-|--------|---------|------------|------------|
-| Americas | $12.89B | 59.94% | 10.61% ($1.24B increase) |
-| EMEA (Europe, Middle East & Africa) | $5.55B | 25.83% | 13.79% ($673M increase) |
-| APAC (Asia-Pacific) | $3.06B | 14.23% | 6.47% ($186M increase) |
+**Non-GAAP Performance (FY2024):**
+- Non-GAAP Operating Income: $10.02B (46.6% margin)
+- Non-GAAP Net Income: $8.28B
+- Non-GAAP EPS: $18.42
 
 **Key Insights:**
-- The Americas remains Adobe's largest market, contributing nearly 60% of total revenue
-- EMEA showed the strongest growth rate at 13.79%, indicating strong international expansion
-- All three regions demonstrated positive growth, with total revenue increasing to $21.505B
-- Geographic diversification provides resilience, though Americas dominance remains clear
+- Revenue grew 22% cumulatively from $17.61B to $21.51B over three years
+- Consistent 10-11% year-over-year growth
+- GAAP operating margins impacted by $1B Figma termination fee in Q1 FY2024
+- Strong cash flow generation: $8.06B operating cash flow in FY2024
 
 ---
 
-## Main Products and Business Segments
+### Quarterly Financials (FY2022-FY2024)
+
+#### Fiscal Year 2022 (ended December 2, 2022)
+
+| Quarter | Period End | Revenue | YoY Growth | Net Income (GAAP) | EPS (Non-GAAP) |
+|---------|-----------|---------|------------|-------------------|----------------|
+| Q1 FY22 | Mar 2022 | $4.26B | 9% | $1.27B | $3.37 |
+| Q2 FY22 | Jun 2022 | $4.39B | 14% | $1.18B | $3.35 |
+| Q3 FY22 | Sep 2022 | $4.43B | 13% | $1.14B | $3.40 |
+| Q4 FY22 | Dec 2022 | $4.53B | 10% | $1.18B | $3.60 |
+| **FY Total** | | **$17.61B** | **12%** | **$4.76B** | **$13.71** |
+
+#### Fiscal Year 2023 (ended December 1, 2023)
+
+| Quarter | Period End | Revenue | YoY Growth | Net Income (GAAP) | EPS (Non-GAAP) |
+|---------|-----------|---------|------------|-------------------|----------------|
+| Q1 FY23 | Mar 2023 | $4.66B | 9% | $1.25B | $3.80 |
+| Q2 FY23 | Jun 2023 | $4.82B | 10% | $1.30B | $3.91 |
+| Q3 FY23 | Sep 2023 | $4.89B | 10% | $1.40B | $4.09 |
+| Q4 FY23 | Dec 2023 | $5.05B | 11% | $1.48B | $4.27 |
+| **FY Total** | | **$19.41B** | **10%** | **$5.43B** | **$16.07** |
+
+#### Fiscal Year 2024 (ended November 29, 2024)
+
+| Quarter | Period End | Revenue | YoY Growth | Net Income (GAAP) | Net Income (Non-GAAP) | EPS (Non-GAAP) |
+|---------|-----------|---------|------------|-------------------|----------------------|----------------|
+| Q1 FY24 | Mar 2024 | $5.18B | 11% | $0.62B* | $2.05B | $4.48 |
+| Q2 FY24 | May 2024 | $5.31B | 10% | $1.57B | $2.02B | $4.48 |
+| Q3 FY24 | Aug 2024 | $5.41B | 11% | $1.68B | $2.08B | $4.65 |
+| Q4 FY24 | Nov 2024 | $5.61B | 11% | $1.68B | $2.13B | $4.81 |
+| **FY Total** | | **$21.51B** | **11%** | **$5.56B** | **$8.28B** | **$18.42** |
+
+*Q1 FY24 GAAP net income impacted by $1B Figma acquisition termination fee
+
+**Quarterly Trends:**
+- Consistent double-digit year-over-year growth throughout all 12 quarters
+- Record revenue achieved in every quarter of FY2024
+- Strong cash flow from operations: $8.06B in FY2024 (up from $7.30B in FY2023)
+
+---
+
+## Revenue by Segment
 
 ### Digital Media Segment
 
-**Performance:** Delivered 12% YoY revenue growth in Q3 FY2025, with Annual Recurring Revenue (ARR) expanding 11.7% to $18.6 billion.
+| Fiscal Year | Revenue | YoY Growth | % of Total |
+|-------------|---------|------------|------------|
+| FY 2022 | $12.84B | 10% | 72.9% |
+| FY 2023 | $14.22B | 11% | 73.3% |
+| FY 2024 | $15.86B | 12% | 73.8% |
 
-**Key Products:**
-- **Creative Cloud** (37+ million paid subscribers as of end of 2024)
-  - Adobe Photoshop - Industry-leading image editing software (used by 90% of creative professionals worldwide)
-  - Adobe Illustrator - Vector-based illustration and design software
-  - Adobe Premiere Pro - Professional video editing software
-  - Adobe After Effects - Motion graphics and visual effects software
-  - Adobe InDesign - Professional publishing and page layout
-  - Adobe Lightroom - Photo editing and organization
+**Segment Breakdown (FY2024):**
+- **Creative Cloud Revenue:** $12.68B (10% YoY growth, 11% constant currency)
+- **Document Cloud Revenue:** $3.18B (18% YoY growth)
+- **Net New Digital Media ARR:** $2.00B
 
-- **Document Cloud**
-  - Adobe Acrobat - PDF creation and editing
-  - Adobe Sign - Digital signature and document workflow
-  - Adobe Reader - Free PDF viewing (ubiquitous standard)
-
-**Creative Cloud Pro:** Integrates Firefly AI, Photoshop, Illustrator, and Premiere Pro with advanced AI capabilities, driving strong migration among creative professionals.
+**Q4 FY2024 Performance:**
+- Digital Media: $4.15B (12% YoY growth)
+- Document Cloud: $843M (17% YoY growth)
 
 ### Digital Experience Segment
 
-**Performance:** Revenue increased 9% YoY to $1.48B in Q3 FY2025, with subscription revenue up 11% YoY.
+| Fiscal Year | Revenue | YoY Growth | % of Total |
+|-------------|---------|------------|------------|
+| FY 2022 | $4.42B | 14% | 25.1% |
+| FY 2023 | $4.89B | 11% | 25.2% |
+| FY 2024 | $5.37B | 10% | 25.0% |
 
-**Key Products:**
-- **Adobe Experience Cloud** - Enterprise marketing and analytics platform
-  - Adobe Experience Manager - Content management system
-  - Adobe Analytics - Web analytics and business intelligence
-  - Adobe Target - Testing and personalization
-  - Adobe Campaign - Marketing automation
-  - Adobe Marketo Engage - B2B marketing automation
+**Q4 FY2024 Performance:**
+- Digital Experience Revenue: $1.40B (10% YoY growth)
+- Subscription Revenue: $1.27B (13% YoY growth)
 
-- **GenStudio** - Now exceeds $1 billion in ARR, growing over 25% YoY
+### Publishing and Advertising Segment
 
-### AI Innovation: Adobe Firefly
-
-**Launch & Evolution:**
-- Introduced in 2023 as Adobe's generative AI platform
-- Latest updates announced at Adobe MAX (October 2025)
-
-**Key Features (October 2025 Updates):**
-- **Generate Soundtrack** - Creates fully licensed audio tracks
-- **Generate Speech** - Crystal clear AI voiceovers
-- **Timeline-based AI video editor** - Professional video creation
-- **Image Model 5** - Generates photorealistic images in native 4MP resolution
-
-**Adoption Metrics:**
-- 29 billion total generations across all products
-- 40% quarter-over-quarter growth in video generations
-- 45% of Creative Cloud subscribers engaged with Firefly by March 2024
-- Firefly Services consumption up 32% QoQ
-- Custom Models usage up 68% QoQ
-
-**Partner Ecosystem:**
-Adobe Firefly integrates models from leading AI partners including:
-- ElevenLabs
-- Google
-- Luma AI
-- OpenAI
-- Runway
-- Topaz Labs
-
-**Enterprise Adoption:**
-Major clients including Disney and Home Depot use Firefly Foundry service to build brand-specific AI models through managed, multi-year engagements.
+| Fiscal Year | Revenue | YoY Growth | % of Total |
+|-------------|---------|------------|------------|
+| FY 2022 | $350M | -6% | 2.0% |
+| FY 2023 | $300M | -14% | 1.5% |
+| FY 2024 | $275M | -8% | 1.3% |
 
 ---
 
-## Key Company Milestones
+## Revenue by Geography (FY2024)
 
-| Year | Milestone | Impact |
-|------|-----------|--------|
-| 1982 | Company founded by John Warnock and Charles Geschke | Beginning of Adobe's journey |
-| 1984 | PostScript language introduced | Revolutionized desktop publishing and printing |
-| 1987 | Adobe Illustrator launched | Established position in creative professional market |
-| 1988-1990 | Adobe Photoshop debut | Became synonymous with image editing |
-| 1993 | PDF format and Acrobat introduced | Created universal document standard |
-| 2003 | Creative Suite launched | Bundled flagship products together |
-| 2011 | Creative Cloud introduced | Shifted to SaaS subscription model |
-| 2023 | Adobe Firefly AI launched | Entered generative AI market with commercially safe models |
-| 2024 | Figma acquisition blocked | $20B deal rejected on antitrust grounds |
-| 2025 | Firefly Image Model 5 launched | Advanced AI capabilities with partner ecosystem |
+| Region | Revenue | % of Total | YoY Growth |
+|--------|---------|------------|------------|
+| **Americas** | $12.89B | 59.9% | 10.6% |
+| **EMEA** | $5.55B | 25.8% | 13.8% |
+| **APAC** | $3.06B | 14.2% | 6.5% |
+| **Total** | **$21.51B** | **100%** | **11%** |
+
+**Key Insights:**
+- Americas remains the dominant market with nearly 60% of revenue
+- EMEA showed strongest growth at 13.8%, indicating international expansion success
+- APAC growth slower at 6.5%, representing opportunity for increased penetration
+- Geographic diversification provides business resilience
+
+---
+
+## Main Products and Key Milestones
+
+### Digital Media - Creative Cloud
+
+**Overview:** 37+ million paid subscribers (as of end of 2024). 90% of creative professionals worldwide use Photoshop.
+
+#### Adobe Photoshop
+- **1990:** Photoshop 1.0 released for Mac
+- **1991:** Photoshop 2.0 with CMYK support
+- **1994:** Photoshop 3.0 introduces layers
+- **2013:** Photoshop CC launches (subscription model)
+- **2020:** Neural Filters and Sky Replacement (AI-powered)
+- **2023:** Generative Fill introduced using AI
+- **2025:** Celebrates 35 years
+
+#### Adobe Illustrator
+- **1987:** First version "Illustrator 88" released for Mac
+- **1997:** First parallel Mac/Windows release (Version 7)
+- **2013:** Illustrator CC moves to subscription
+- **2024:** Objects on Path, enhanced Image Trace
+- **2024:** Project Neo (beta) for 3D artwork
+
+#### Adobe Premiere Pro
+- Professional video editing software
+- Integration with Firefly AI for video generation
+- Enhanced audio and motion graphics capabilities
+
+### Digital Media - Document Cloud
+
+**Overview:** Fastest growing segment with 18% YoY growth in FY2024
+
+#### Adobe Acrobat
+- **1993:** PDF format and Acrobat introduced
+- Industry standard for document creation and sharing
+- **2024:** Simplified interface, cloud storage integration
+- Live Sign feature for Microsoft Teams
+
+#### Adobe Sign
+- Digital signature and document workflow
+- Private, organization, and public link permissions
+- Integration across enterprise systems
+
+### Digital Experience - Experience Cloud
+
+**Overview:** $5.37B revenue in FY2024, enterprise marketing and analytics platform
+
+#### Key Products:
+- **Adobe Experience Manager** - Content management system
+- **Adobe Analytics** - Web analytics and business intelligence
+- **Adobe Target** - Testing and personalization
+- **Adobe Campaign** - Marketing automation
+- **Adobe Marketo Engage** - B2B marketing automation
+- **Adobe Journey Optimizer** - Customer journey orchestration
+
+**2024 Updates:**
+- GenAI features: Generate variations using AI
+- Content Fragment Editor with version comparison
+- Enhanced CAPTCHA support (Cloudflare Turnstile, hCaptcha)
+- DocAssurance APIs for document security
+
+### AI Innovation: Adobe Firefly
+
+**Launch:** 2023 as Adobe's generative AI platform
+
+**Key Capabilities:**
+- Image generation and editing
+- Vector graphics generation
+- Text effects
+- Video generation (beta, announced MAX 2024)
+
+**Adoption Metrics (FY2024):**
+- 29 billion total generations across all products
+- 45% of Creative Cloud subscribers engaged with Firefly by March 2024
+- 40% quarter-over-quarter growth in video generations
+
+**Differentiation:**
+- Trained on licensed Adobe Stock and public domain content
+- Commercially safe with IP indemnification
+- Custom model training via Firefly Foundry (under 48 hours)
+- Enterprise clients: Disney, Home Depot
+
+**Partner Ecosystem:**
+- ElevenLabs, Google, Luma AI, OpenAI, Runway, Topaz Labs
 
 ---
 
@@ -148,25 +225,37 @@ Major clients including Disney and Home Depot use Firefly Foundry service to bui
 
 ### Adobe MAX - The Creativity Conference
 
-**Format:** Hybrid (In-person + Virtual)
-**Focus:** Creative professionals, product updates, and creative software innovations
-**Recent/Upcoming:**
-- **Adobe MAX 2025:** October 28-30, 2025, Los Angeles Convention Center + Online
-- **Adobe MAX 2024:** Miami, FL
-- **Features:** Preconference courses, hands-on training, product demonstrations, keynote announcements
+**Focus:** Creative professionals, product innovations, AI announcements
 
-**Significance:** Adobe's flagship event for demonstrating latest updates to Creative Cloud, Photoshop, Illustrator, Premiere Pro, and AI innovations. Free virtual attendance option available.
+**Recent Events:**
+- **Adobe MAX 2024:** October 14-16, 2024, Miami, FL
+  - Firefly Video Model announced
+  - Project Neo beta launch
+  - 100+ talks, keynotes, and hands-on sessions
+
+- **Adobe MAX 2025:** October 28-30, 2025, Los Angeles Convention Center
+  - Firefly Image Model 5
+  - Generate Soundtrack and Speech features
+  - Timeline-based AI video editor
+
+**Format:** Hybrid (in-person + free virtual option)
+**History:** Started in 2003, record attendance 15,200
 
 ### Adobe Summit - The Digital Experience Conference
 
-**Format:** Hybrid (In-person + Virtual)
-**Focus:** Digital experience, marketing automation, enterprise solutions
-**Recent/Upcoming:**
-- **Adobe Summit 2025:** March 17-20, 2025 (Conference March 18-20, Preconference March 17), Las Vegas + Online
-- **Adobe Summit 2024:** March 26-28, 2024, Las Vegas
-- **Adobe Summit 2026:** April 19-22, 2026, Las Vegas (already scheduled)
+**Focus:** Enterprise marketing, digital experience, analytics
 
-**Significance:** Primary event for showcasing Adobe Experience Cloud, marketing automation, analytics, and digital transformation solutions. Targets enterprise marketers and digital experience professionals.
+**Recent Events:**
+- **Adobe Summit 2024:** March 26-28, 2024, Las Vegas
+  - Journey Optimizer for B2B announced
+  - Focus on personalization at scale
+  - Generative AI for marketing
+
+- **Adobe Summit 2025:** March 17-20, 2025, Las Vegas
+- **Adobe Summit 2026:** April 19-22, 2026, Las Vegas (scheduled)
+
+**Format:** Hybrid (in-person + virtual)
+**Audience:** Enterprise marketers, digital experience professionals
 
 ---
 
@@ -174,112 +263,140 @@ Major clients including Disney and Home Depot use Firefly Foundry service to bui
 
 ### Creative Software Competitors
 
-#### Canva
+#### 1. Canva
+
+**Market Position:** 170 million users, targeting non-professionals and SMBs
+
 **Differentiation Strategy:**
-- 170 million users with low-cost subscription plans
-- Simple, accessible interface for non-professionals
-- **Strategic Acquisition:** Purchased Affinity Suite in March 2024
-- **Latest Move:** Launched free integrated app combining photo editing, vector illustration, and page layout to directly challenge Photoshop, Illustrator, and InDesign
-- **Market Impact:** Adobe stock declined 26% in 2024, partly attributed to Canva's competitive pressure
+- Simple drag-and-drop interface for beginners
+- Low-cost subscription plans
+- **March 2024:** Acquired Affinity Suite (direct Adobe competitor)
+- AI features: Magic Write, Magic Design, Magic Edit
+- Best-in-class for immediate feedback and quick iteration
 
 **How Adobe Differentiates:**
 - Professional-grade tools with deeper feature sets
 - Industry-standard software (90% of creative professionals use Photoshop)
-- Advanced AI integration through Firefly
-- Enterprise-scale solutions with brand safety guarantees
+- 20,000 fonts vs Canva's 2,000
+- Firefly AI for commercial-safe content generation
+- Enterprise-scale solutions with IP indemnification
 
-#### Figma
+#### 2. Figma
+
+**Market Position:** 4+ million users, dominant in UI/UX design (77% primary tool usage by 2021)
+
 **Differentiation Strategy:**
-- Browser-based, real-time collaboration for UI/UX design
-- Cross-platform accessibility (no OS limitations)
-- Dev Mode for seamless developer handoff
-- **Market Position:** Dominant leader in UX/UI design space
+- Browser-based, real-time collaboration
+- Cross-platform accessibility
+- Dev Mode for developer handoff
+- Used by Microsoft, Google, Uber
 
 **How Adobe Differentiates:**
-- Adobe discontinued Adobe XD after failed $20B Figma acquisition (blocked on antitrust grounds)
-- Focuses on broader creative suite integration beyond UI/UX
-- Stronger in print design, video editing, and photo manipulation
+- Broader creative suite beyond UI/UX (video, print, photography)
+- **December 2023:** Adobe XD discontinued after $20B Figma acquisition blocked on antitrust grounds
+- Stronger in print design, video editing, photo manipulation
+- Integrated ecosystem across creation, documents, and marketing
 
-#### Affinity Suite (now owned by Canva)
+#### 3. Affinity Suite (Canva-owned)
+
 **Differentiation Strategy:**
 - One-time purchase model (no subscriptions)
-- Professional-grade tools at lower price point
-- Native performance on Mac and Windows
+- Professional-grade tools at lower price
+- Native Mac and Windows performance
 
 **How Adobe Differentiates:**
-- Continuous updates and new AI features through subscription model
-- Larger ecosystem and third-party integration support
+- Continuous updates through subscription model
+- Larger ecosystem and third-party integrations
 - Cloud-based collaboration and asset management
-
-#### Other Competitors
-- **Sketch:** Mac-native UI design tool with strong ecosystem
-- **CorelDRAW:** Complex print design and vector graphics
-- **Inkscape:** Free, open-source vector graphics editor
+- AI-powered features via Firefly
 
 ### Digital Experience Competitors
 
-#### Salesforce Marketing Cloud
+#### 4. Salesforce Marketing Cloud
+
+**Market Position:** Leading marketing automation platform, deep CRM integration
+
 **Differentiation Strategy:**
-- Deep integration with Salesforce CRM ecosystem
-- Complex, multi-channel customer journey orchestration
-- Large-scale personalization using Salesforce data
+- Robust Email Studio for customizable campaigns
+- Complex multi-channel journey orchestration (Journey Builder)
+- Tight alignment with Salesforce CRM data
+- Comprehensive marketing studios and modules
 
 **How Adobe Differentiates:**
-- Stronger content management and creative integration
+- Superior integration with creative tools
 - Adobe Experience Platform (AEP) for unified customer data
-- Better suited for enterprises with heavy web analytics and personalization needs
+- Better web analytics and personalization (Adobe Analytics, Target)
+- Content management leadership with Experience Manager
+- User-friendly interface vs Salesforce's steeper learning curve
 
-#### Adobe Marketo Engage (Adobe-owned)
-**Position:** B2B demand generation powerhouse with lead nurturing, scoring, and account-based marketing (ABM) capabilities. Works well with mixed CRM environments (Salesforce, Microsoft Dynamics).
+#### 5. HubSpot Marketing Hub
 
-#### HubSpot Marketing Hub
 **Differentiation Strategy:**
 - All-in-one platform with native CRM
-- Ease of use and fast time to value (setup score 8.1 vs. Adobe's 6.7)
-- Integrated content management system
+- Ease of use (setup score 8.1 vs Adobe's 6.7)
+- Fast time to value
 - Lower complexity for SMB and mid-market
 
 **How Adobe Differentiates:**
 - Enterprise-scale capabilities for complex organizations
 - Deeper analytics and personalization at scale
-- Better for companies requiring dedicated technical teams
-- More comprehensive for large content operations
+- Comprehensive for large content operations
+- Better for companies with dedicated technical teams
 
 ### Adobe's Core Competitive Advantages
 
-1. **Ecosystem Integration**
-   - Only company covering entire digital content lifecycle: creation (Creative Cloud) → management (Document Cloud) → delivery and analysis (Experience Cloud)
-   - 37+ million Creative Cloud subscribers locked into ecosystem
+1. **Complete Digital Content Lifecycle**
+   - Only company covering creation → management → delivery
+   - Creative Cloud + Document Cloud + Experience Cloud integration
+   - 37+ million Creative Cloud subscribers in ecosystem
 
 2. **Commercially Safe AI**
-   - Firefly trained exclusively on licensed Adobe Stock content and public domain
-   - Provides IP indemnification for enterprise customers
-   - Critical differentiator for risk-averse enterprises (Disney, Home Depot, etc.)
+   - Firefly trained on licensed content only
+   - IP indemnification for enterprise customers
+   - Custom model training via Firefly Foundry
 
-3. **Custom AI Models**
-   - Firefly Foundry enables brand-specific model training in under 48 hours
-   - Proprietary models using company assets unavailable to competitors
-
-4. **Professional Market Dominance**
+3. **Professional Market Dominance**
    - 90% of creative professionals use Photoshop
    - Industry-standard file formats (.PSD, .AI, .PDF)
    - Decades of professional workflow optimization
 
-5. **Open Platform Strategy**
-   - Integrates third-party AI models (OpenAI, Google, Runway) within Adobe environment
+4. **Open Platform Strategy**
+   - Integrates third-party AI models (OpenAI, Google, Runway)
    - Provides choice while maintaining platform control
 
 ### Competitive Challenges
 
 - **Pricing Pressure:** Canva and Affinity offer lower-cost alternatives
-- **UI/UX Market Lost:** No competitive offering after Adobe XD discontinuation and failed Figma acquisition
-- **Complexity:** Adobe Experience Cloud requires dedicated technical teams, creating barriers for smaller organizations
-- **Subscription Fatigue:** Some users resist ongoing subscription costs vs. one-time purchases
+- **UI/UX Market Lost:** No competitive offering after Adobe XD discontinuation
+- **Complexity:** Experience Cloud requires dedicated technical teams
+- **Subscription Fatigue:** Some users prefer one-time purchases
+- **Stock Performance:** ADBE declined 26% in 2024 partly due to competitive pressure
+
+---
+
+## Additional Key Metrics
+
+### Remaining Performance Obligations (RPO)
+- **FY2024:** $19.96B (16% YoY growth)
+- Indicates strong forward revenue visibility
+
+### Share Repurchases
+- **FY2024:** Approximately 17.5 million shares repurchased
+- **May 2024:** New $25 billion share repurchase program announced
+
+### Cash Position
+- **Q2 FY2024:** $7.66B cash and cash equivalents
+- Strong balance sheet supporting capital returns
+
+### FY2025 Guidance (Targets)
+- Non-GAAP operating margin: ~46%
+- Non-GAAP tax rate: ~18.5%
+- Diluted share count: ~433 million
 
 ---
 
 ## Last Updated
 
-**November 13, 2025**
+**November 18, 2025**
 
-*This research document provides a comprehensive overview of Adobe Inc. as of the date above. Financial data is based on publicly available information from Adobe's investor relations, earnings reports, and market analysis sources.*
+*This research document provides a comprehensive overview of Adobe Inc. as of the date above. Financial data is based on Adobe's official earnings reports, SEC filings, and investor relations materials. Note: Adobe's fiscal year ends on the last Friday of November.*

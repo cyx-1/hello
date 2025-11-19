@@ -1,0 +1,13 @@
+{
+  "name": "mediator-pattern",
+  "version": "1.0.0",
+  "description": "Mediator design pattern demonstration in TypeScript",
+  "main": "main_mediator.ts",
+  "scripts": {
+    "start": "npx tsx main_mediator.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

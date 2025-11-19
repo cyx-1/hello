@@ -1,0 +1,13 @@
+{
+  "name": "factory-method-pattern",
+  "version": "1.0.0",
+  "description": "Factory Method design pattern demonstration in TypeScript",
+  "main": "main_factory_method.ts",
+  "scripts": {
+    "start": "npx tsx main_factory_method.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "observer-pattern",
+  "version": "1.0.0",
+  "description": "Observer design pattern demonstration in TypeScript",
+  "main": "main_observer.ts",
+  "scripts": {
+    "start": "npx tsx main_observer.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

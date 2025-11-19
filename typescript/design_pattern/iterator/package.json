@@ -1,0 +1,16 @@
+{
+  "name": "iterator-pattern",
+  "version": "1.0.0",
+  "description": "Iterator Design Pattern implementation in TypeScript",
+  "main": "dist/main_iterator.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/main_iterator.js",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["design-patterns", "iterator", "typescript"],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

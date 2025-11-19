@@ -1,0 +1,17 @@
+{
+  "name": "composite-pattern",
+  "version": "1.0.0",
+  "description": "TypeScript implementation of the Composite design pattern",
+  "main": "dist/main_composite.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/main_composite.js",
+    "dev": "ts-node main_composite.ts"
+  },
+  "keywords": ["design-patterns", "composite", "typescript"],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.10.0"
+  }
+}

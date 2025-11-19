@@ -1,0 +1,18 @@
+{
+  "name": "builder-pattern",
+  "version": "1.0.0",
+  "description": "TypeScript Builder Design Pattern Example",
+  "main": "main_builder.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node main_builder.js",
+    "dev": "ts-node main_builder.ts"
+  },
+  "keywords": ["builder", "design-pattern", "typescript"],
+  "author": "Dave Chen",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
+  }
+}

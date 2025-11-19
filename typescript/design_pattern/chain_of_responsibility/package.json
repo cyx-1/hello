@@ -1,0 +1,13 @@
+{
+  "name": "chain-of-responsibility-pattern",
+  "version": "1.0.0",
+  "description": "Chain of Responsibility design pattern demonstration in TypeScript",
+  "main": "main_chain_of_responsibility.ts",
+  "scripts": {
+    "start": "npx tsx main_chain_of_responsibility.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

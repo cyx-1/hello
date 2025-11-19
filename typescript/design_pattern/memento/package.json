@@ -1,0 +1,13 @@
+{
+  "name": "memento-pattern",
+  "version": "1.0.0",
+  "description": "Memento design pattern demonstration in TypeScript",
+  "main": "main_memento.ts",
+  "scripts": {
+    "start": "npx tsx main_memento.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}
