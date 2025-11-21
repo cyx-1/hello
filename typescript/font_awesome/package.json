@@ -1,0 +1,18 @@
+{
+  "name": "font-awesome-bun-typescript",
+  "version": "1.0.0",
+  "description": "Font Awesome demonstration using Bun and TypeScript",
+  "main": "main_font_awesome.ts",
+  "scripts": {
+    "start": "bun run main_font_awesome.ts"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
