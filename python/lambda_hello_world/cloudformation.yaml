@@ -1,0 +1,146 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Simple Hello World Lambda with API Gateway HTTP endpoint'
+
+Resources:
+  # IAM Role for Lambda execution
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: HelloWorldLambdaRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+
+  # Lambda Function
+  HelloWorldFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: HelloWorldFunction
+      Runtime: python3.12
+      Handler: main_lambda_hello_world.lambda_handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Code:
+        ZipFile: |
+          import json
+
+          def lambda_handler(event, context):
+              """Handle incoming HTTP requests via API Gateway."""
+              http_method = event.get("httpMethod", "UNKNOWN")
+              path = event.get("path", "/")
+
+              message = {
+                  "message": "Hello, World!",
+                  "method": http_method,
+                  "path": path,
+                  "timestamp": context.request_id if context else "local-test",
+              }
+
+              return {
+                  "statusCode": 200,
+                  "headers": {
+                      "Content-Type": "application/json",
+                      "Access-Control-Allow-Origin": "*",
+                  },
+                  "body": json.dumps(message),
+              }
+      Description: Simple Hello World Lambda function
+      Timeout: 10
+      MemorySize: 128
+
+  # API Gateway REST API
+  HelloWorldApi:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Name: HelloWorldApi
+      Description: API Gateway for Hello World Lambda
+      EndpointConfiguration:
+        Types:
+          - REGIONAL
+
+  # API Gateway Resource (proxy for all paths)
+  ApiResource:
+    Type: AWS::ApiGateway::Resource
+    Properties:
+      RestApiId: !Ref HelloWorldApi
+      ParentId: !GetAtt HelloWorldApi.RootResourceId
+      PathPart: '{proxy+}'
+
+  # API Gateway Method for ANY HTTP method
+  ApiMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      RestApiId: !Ref HelloWorldApi
+      ResourceId: !Ref ApiResource
+      HttpMethod: ANY
+      AuthorizationType: NONE
+      Integration:
+        Type: AWS_PROXY
+        IntegrationHttpMethod: POST
+        Uri: !Sub 'arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${HelloWorldFunction.Arn}/invocations'
+
+  # API Gateway Method for root path
+  RootMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      RestApiId: !Ref HelloWorldApi
+      ResourceId: !GetAtt HelloWorldApi.RootResourceId
+      HttpMethod: ANY
+      AuthorizationType: NONE
+      Integration:
+        Type: AWS_PROXY
+        IntegrationHttpMethod: POST
+        Uri: !Sub 'arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${HelloWorldFunction.Arn}/invocations'
+
+  # API Gateway Deployment
+  ApiDeployment:
+    Type: AWS::ApiGateway::Deployment
+    DependsOn:
+      - ApiMethod
+      - RootMethod
+    Properties:
+      RestApiId: !Ref HelloWorldApi
+      Description: Deployment for Hello World API
+
+  # API Gateway Stage
+  ApiStage:
+    Type: AWS::ApiGateway::Stage
+    Properties:
+      RestApiId: !Ref HelloWorldApi
+      DeploymentId: !Ref ApiDeployment
+      StageName: prod
+      Description: Production stage
+
+  # Lambda Permission for API Gateway to invoke
+  LambdaApiPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref HelloWorldFunction
+      Action: lambda:InvokeFunction
+      Principal: apigateway.amazonaws.com
+      SourceArn: !Sub 'arn:aws:execute-api:${AWS::Region}:${AWS::AccountId}:${HelloWorldApi}/*/*'
+
+# Outputs
+Outputs:
+  ApiEndpoint:
+    Description: 'API Gateway endpoint URL'
+    Value: !Sub 'https://${HelloWorldApi}.execute-api.${AWS::Region}.amazonaws.com/prod/'
+    Export:
+      Name: HelloWorldApiEndpoint
+
+  LambdaFunctionArn:
+    Description: 'Lambda Function ARN'
+    Value: !GetAtt HelloWorldFunction.Arn
+    Export:
+      Name: HelloWorldFunctionArn
+
+  LambdaFunctionName:
+    Description: 'Lambda Function Name'
+    Value: !Ref HelloWorldFunction
+    Export:
+      Name: HelloWorldFunctionName
