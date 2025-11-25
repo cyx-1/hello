@@ -1,0 +1,24 @@
+{
+  "name": "vue-react-comparison",
+  "version": "1.0.0",
+  "description": "Comparison of Vue and React TypeScript Hello World examples",
+  "type": "module",
+  "scripts": {
+    "dev:vue": "vite --open vue_hello.html",
+    "dev:react": "vite --open react_hello.html",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
+  }
+}
