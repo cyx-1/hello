@@ -1,0 +1,63 @@
+---
+# OpenRewrite Configuration for TypeScript
+# This file defines the recipes and rules for automated code transformation
+
+type: specs.openrewrite.org/v1beta/recipe
+name: com.example.TypeScriptModernization
+displayName: TypeScript Modernization Recipe
+description: Modernizes TypeScript code using best practices and latest features
+recipeList:
+  # Convert var to let/const
+  - org.openrewrite.javascript.ConvertVarToLet
+
+  # Use template literals instead of string concatenation
+  - org.openrewrite.javascript.UseTemplateLiterals
+
+  # Convert function expressions to arrow functions
+  - org.openrewrite.javascript.ConvertToArrowFunctions
+
+  # Convert CommonJS to ES Modules
+  - org.openrewrite.javascript.CommonJSToESModule
+
+  # Convert promise chains to async/await
+  - org.openrewrite.javascript.PromisesToAsyncAwait
+
+  # Apply TypeScript ESLint defaults
+  - org.openrewrite.codemods.ESLintTypeScriptDefaults
+
+---
+# Custom Recipe: Remove Console Logs in Production
+type: specs.openrewrite.org/v1beta/recipe
+name: com.example.RemoveConsoleLogs
+displayName: Remove Console Logs
+description: Removes console.log statements for production builds
+recipeList:
+  - org.openrewrite.javascript.cleanup.RemoveConsoleStatements
+
+---
+# Custom Recipe: Add Optional Chaining
+type: specs.openrewrite.org/v1beta/recipe
+name: com.example.AddOptionalChaining
+displayName: Add Optional Chaining
+description: Converts null checks to optional chaining operators
+recipeList:
+  - org.openrewrite.javascript.cleanup.AddOptionalChaining
+
+---
+# Recipe Configuration for Specific Transformations
+type: specs.openrewrite.org/v1beta/recipe
+name: com.example.TypeScriptCleanup
+displayName: TypeScript Code Cleanup
+description: Comprehensive cleanup for TypeScript codebases
+recipeList:
+  # Remove unused imports
+  - org.openrewrite.javascript.cleanup.RemoveUnusedImports
+
+  # Sort imports
+  - org.openrewrite.javascript.cleanup.SortImports
+
+  # Simplify boolean expressions
+  - org.openrewrite.javascript.cleanup.SimplifyBooleanExpression
+
+  # Remove redundant type assertions
+  - org.openrewrite.javascript.cleanup.RemoveRedundantTypeAssertion
