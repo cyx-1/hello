@@ -1,0 +1,93 @@
+======================================================================
+Example 1: Date Handling and Calendar Operations
+======================================================================
+Line 29: Created date: January 15th, 2024
+Line 33: Today's date: December 19th, 2025
+Line 37: Is January 15th, 2024 a business day? False
+Line 41: Date advanced by 5 business days: January 22nd, 2024
+Line 45: Business days between January 15th, 2024 and January 22nd, 2024: 4
+
+======================================================================
+Example 2: Day Count Conventions
+======================================================================
+Line 65: Period from January 1st, 2024 to July 1st, 2024:
+Line 68:   Actual/365: 0.498630 years
+Line 68:   Actual/360: 0.505556 years
+Line 68:   30/360: 0.500000 years
+Line 68:   Actual/Actual: 0.497268 years
+
+======================================================================
+Example 3: Interest Rate Calculations
+======================================================================
+Line 80: Interest rate: 5.000000 % Actual/365 (Fixed) Annual compounding
+Line 84: Discount factor for 1 year: 0.952381
+Line 88: Compound factor for 1 year: 1.050000
+Line 92: Equivalent continuous rate: 0.048790
+
+======================================================================
+Example 4: Bond Pricing and Yield Calculations
+======================================================================
+Line 104: Evaluation date: January 15th, 2024
+Line 126: Bond schedule created with 11 dates
+Line 127: Payment dates: ['January 15th, 2024', 'July 15th, 2024', 'January 15th, 2025', 'July 15th, 2025', 'January 15th, 2026', 'July 15th, 2026', 'January 15th, 2027', 'July 15th, 2027', 'January 15th, 2028', 'July 15th, 2028', 'January 15th, 2029']
+Line 139: Bond price: $98.50
+Line 140: Bond yield: 5.3431%
+Line 148: At 5.50% yield:
+Line 149:   Clean price: $97.8285
+Line 150:   Dirty price: $97.8560
+Line 151:   Accrued interest: $0.0275
+
+======================================================================
+Example 5: Option Pricing using Black-Scholes Model
+======================================================================
+Line 169: Option parameters:
+Line 170:   Type: Call
+Line 171:   Underlying price: $100.00
+Line 172:   Strike price: $105.00
+Line 173:   Risk-free rate: 5.00%
+Line 174:   Volatility: 20.00%
+Line 175:   Dividend yield: 2.00%
+Line 176:   Time to maturity: 1.0 year
+Line 219: Black-Scholes results:
+Line 220:   Option price: $6.9869
+Line 221:   Delta: 0.4925
+Line 222:   Gamma: 0.0196
+Line 223:   Vega: 39.1036
+Line 224:   Theta: -5.0384
+Line 225:   Rho: 42.2596
+
+======================================================================
+Example 6: Yield Curve Construction
+======================================================================
+Line 237: Curve construction date: January 15th, 2024
+Line 255: Market rates:
+Line 256: Deposits: {'1M': 0.045, '3M': 0.046, '6M': 0.0475}
+Line 257: Swaps: {'1Y': 0.049, '2Y': 0.051, '3Y': 0.053, '5Y': 0.056, '7Y': 0.058, '10Y': 0.06}
+Line 306: Yield curve constructed with 9 instruments
+
+======================================================================
+Example 7: Forward Rate Calculations
+======================================================================
+Line 317: Zero rates and forward rates:
+Line 318: Tenor      Zero Rate       Discount       
+Line 324: 0.25       4.6693          0.988526       
+Line 324: 0.50       4.7986          0.976576       
+Line 324: 1.00       4.8133          0.953447       
+Line 324: 2.00       5.0139          0.905445       
+Line 324: 3.00       5.2225          0.856358       
+Line 324: 5.00       5.5390          0.760538       
+Line 324: 7.00       5.7601          0.671608       
+Line 324: 10.00      5.9926          0.553852       
+
+Line 328: Forward rates (1-year forward rates):
+Line 329: Start      End        Forward Rate   
+Line 343: 0          1          4.8141         %
+Line 343: 1          2          5.2270         %
+Line 343: 2          3          5.6513         %
+Line 343: 3          4          5.9256         %
+Line 343: 5          6          6.2661         %
+Line 343: 7          8          6.4841         %
+
+======================================================================
+Line 347: All QuantLib examples completed successfully!
+======================================================================
