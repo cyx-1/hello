@@ -46,7 +46,7 @@ def download_subtitles(url, output_name):
     )
 
     if result.returncode == 0:
-        print("✓ Manual subtitles downloaded successfully!")
+        print("[OK] Manual subtitles downloaded successfully!")
         return True
 
     print("Manual subtitles not available. Trying auto-generated...")
@@ -63,10 +63,10 @@ def download_subtitles(url, output_name):
     )
 
     if result.returncode == 0:
-        print("✓ Auto-generated subtitles downloaded successfully!")
+        print("[OK] Auto-generated subtitles downloaded successfully!")
         return True
 
-    print("⚠ No subtitles available for this video")
+    print("[WARN] No subtitles available for this video")
     return False
 
 
@@ -218,7 +218,7 @@ def main():
         # Find the downloaded VTT file
         vtt_file = find_vtt_file()
         if not vtt_file:
-            print("⚠ No VTT file found after download")
+            print("[WARN] No VTT file found after download")
             sys.exit(1)
 
         # Create output directory: youtube/{channel_name}/
@@ -226,15 +226,15 @@ def main():
         output_dir.mkdir(parents=True, exist_ok=True)
 
         # Convert to markdown with timestamps
-        output_file = output_dir / f"{video_title}.md"
+        output_file = output_dir / f"transcript-{video_title}.md"
         convert_vtt_to_markdown(vtt_file, output_file, video_title, url)
 
-        print(f"✓ Saved to: {output_file}")
+        print(f"[OK] Saved to: {output_file}")
 
         # Clean up temporary VTT file
         os.remove(vtt_file)
-        print("✓ Cleaned up temporary VTT file")
-        print("✓ Complete!")
+        print("[OK] Cleaned up temporary VTT file")
+        print("[OK] Complete!")
 
     except subprocess.CalledProcessError as e:
         print(f"Error running yt-dlp: {e}")

@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Skill(summarize_youtube_transcript)"
+      "Skill(summarize_youtube_transcript)",
+      "Bash(uv run:*)"
     ]
   }
 }
