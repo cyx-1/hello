@@ -1,7 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Skill(fetch_youtube_transcript)"
+      "Skill(summarize_youtube_transcript)"
     ]
   }
 }
