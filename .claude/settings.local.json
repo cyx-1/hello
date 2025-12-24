@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Skill(summarize_youtube_transcript)",
-      "Bash(uv run:*)"
+      "Bash(uv run:*)",
+      "Bash(ls:*)",
+      "Bash(yt-dlp:*)"
     ]
   }
 }
