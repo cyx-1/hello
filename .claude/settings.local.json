@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(fetch_youtube_transcript)"
+    ]
+  }
+}

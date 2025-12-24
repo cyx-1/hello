@@ -1,0 +1,37 @@
+2025-12-24 07:08:22
+2025-12-24 07:08:54
+[2025-12-24 07:14:42] Session: 03966094-bae7-4326-9bd5-0647fa781035
+Prompt: what's your knowledge date?
+--------------------------------------------------------------------------------
+[2025-12-24 07:18:38] Session: 03966094-bae7-4326-9bd5-0647fa781035
+Prompt: what does this project say about avanade
+--------------------------------------------------------------------------------
+[2025-12-24 07:22:36] Session: ba70fde7-920c-4bb6-aab0-ac84fa022bae
+Prompt: what is my name?
+--------------------------------------------------------------------------------
+[2025-12-24 07:22:41] Session: ba70fde7-920c-4bb6-aab0-ac84fa022bae
+Prompt: 
+--------------------------------------------------------------------------------
+[2025-12-24 07:26:35] Session: ba70fde7-920c-4bb6-aab0-ac84fa022bae
+Prompt: hello what's your name?
+Prompt: {'session_id': 'ba70fde7-920c-4bb6-aab0-ac84fa022bae', 'transcript_path': 'C:\\Users\\yexin\\.claude\\projects\\C--Users-yexin-code-projects-hello\\ba70fde7-920c-4bb6-aab0-ac84fa022bae.jsonl', 'cwd': 'C:\\Users\\yexin\\code\\projects\\hello', 'permission_mode': 'default', 'hook_event_name': 'UserPromptSubmit', 'prompt': "hello what's your name?"}
+--------------------------------------------------------------------------------
+[2025-12-24 07:26:40] Session: ba70fde7-920c-4bb6-aab0-ac84fa022bae
+Prompt: 
+Prompt: {'session_id': 'ba70fde7-920c-4bb6-aab0-ac84fa022bae', 'transcript_path': 'C:\\Users\\yexin\\.claude\\projects\\C--Users-yexin-code-projects-hello\\ba70fde7-920c-4bb6-aab0-ac84fa022bae.jsonl', 'cwd': 'C:\\Users\\yexin\\code\\projects\\hello', 'permission_mode': 'default', 'hook_event_name': 'Stop', 'stop_hook_active': False}
+--------------------------------------------------------------------------------
+[2025-12-24 07:31:56] Session: 46661b2c-a1fe-4ae8-a7d7-857b7880047d
+Input Data: {'session_id': '46661b2c-a1fe-4ae8-a7d7-857b7880047d', 'transcript_path': 'C:\\Users\\yexin\\.claude\\projects\\C--Users-yexin-code-projects-hello\\46661b2c-a1fe-4ae8-a7d7-857b7880047d.jsonl', 'cwd': 'C:\\Users\\yexin\\code\\projects\\hello', 'permission_mode': 'default', 'hook_event_name': 'UserPromptSubmit', 'prompt': 'summarize info on Palantir'}
+--------------------------------------------------------------------------------
+[2025-12-24 07:33:31] Session: 46661b2c-a1fe-4ae8-a7d7-857b7880047d
+Input Data: {'session_id': '46661b2c-a1fe-4ae8-a7d7-857b7880047d', 'transcript_path': 'C:\\Users\\yexin\\.claude\\projects\\C--Users-yexin-code-projects-hello\\46661b2c-a1fe-4ae8-a7d7-857b7880047d.jsonl', 'cwd': 'C:\\Users\\yexin\\code\\projects\\hello', 'permission_mode': 'default', 'hook_event_name': 'UserPromptSubmit', 'prompt': 'summarize info already collected by this project on Palantir'}
+--------------------------------------------------------------------------------
+[2025-12-24 07:34:02] Session: 46661b2c-a1fe-4ae8-a7d7-857b7880047d
+Input Data: {'session_id': '46661b2c-a1fe-4ae8-a7d7-857b7880047d', 'transcript_path': 'C:\\Users\\yexin\\.claude\\projects\\C--Users-yexin-code-projects-hello\\46661b2c-a1fe-4ae8-a7d7-857b7880047d.jsonl', 'cwd': 'C:\\Users\\yexin\\code\\projects\\hello', 'permission_mode': 'default', 'hook_event_name': 'Stop', 'stop_hook_active': False}
+--------------------------------------------------------------------------------
+[2025-12-24 08:07:13] Session: 803e9f49-081c-4d81-b0b2-cb8f4264dd61
+Input Data: {'session_id': '803e9f49-081c-4d81-b0b2-cb8f4264dd61', 'transcript_path': 'C:\\Users\\yexin\\.claude\\projects\\C--Users-yexin-code-projects-hello\\803e9f49-081c-4d81-b0b2-cb8f4264dd61.jsonl', 'cwd': 'C:\\Users\\yexin\\code\\projects\\hello', 'permission_mode': 'default', 'hook_event_name': 'UserPromptSubmit', 'prompt': 'get transcript for https://youtu.be/WCGTQBCE3FA?si=DDd0ZHaYNWKg6QCC'}
+--------------------------------------------------------------------------------
+[2025-12-24 08:08:45] Session: 803e9f49-081c-4d81-b0b2-cb8f4264dd61
+Input Data: {'session_id': '803e9f49-081c-4d81-b0b2-cb8f4264dd61', 'transcript_path': 'C:\\Users\\yexin\\.claude\\projects\\C--Users-yexin-code-projects-hello\\803e9f49-081c-4d81-b0b2-cb8f4264dd61.jsonl', 'cwd': 'C:\\Users\\yexin\\code\\projects\\hello', 'permission_mode': 'default', 'hook_event_name': 'Stop', 'stop_hook_active': False}
+--------------------------------------------------------------------------------
