@@ -1,0 +1,98 @@
+============================================================
+QUESTIONARY - Interactive CLI Tool Demonstrations
+============================================================
+
+Note: Some demos require interactive input.
+For automated demo, default values will be used.
+
+
+=== Text Input Demo ===
+? What is your name? Alice Smith
+Hello, Alice Smith!
+
+=== Password Input Demo ===
+? Enter your password: ***********
+Password length: 11 characters
+
+=== Confirmation Demo ===
+? Do you want to continue? Yes
+User confirmed: True
+
+=== Select Demo ===
+? What's your favorite programming language? Python
+  Python
+❯ JavaScript
+  Go
+  Rust
+  Java
+  TypeScript
+
+[User selected: JavaScript]
+Selected: JavaScript
+
+=== Checkbox Demo ===
+? Select your skills (use space to select, enter to confirm): done (3 selections)
+❯ ◉ Python
+  ◯ JavaScript
+  ◉ Docker
+  ◉ Kubernetes
+  ◯ AWS
+  ◯ Git
+
+[User selected: Python, Docker, Kubernetes]
+Selected skills: Python, Docker, Kubernetes
+
+=== Raw Select Demo ===
+? Choose your deployment environment? Staging
+  1) Development
+❯ 2) Staging
+  3) Production
+
+[User selected: Staging]
+Selected environment: Staging
+
+=== Autocomplete Demo ===
+? Choose a Python web framework (start typing): Fa
+  Django
+❯ FastAPI
+  Flask
+
+[User typed "Fa" and selected: FastAPI]
+Selected framework: FastAPI
+
+=== Path Demo ===
+? Select a file or directory: ./python/questionary
+Selected path: ./python/questionary
+
+=== Custom Style Demo ===
+? Choose your favorite color (with custom styling)? Purple
+  Red
+  Green
+  Blue
+❯ Purple
+
+[User selected: Purple - note the purple highlighting]
+Favorite color: Purple
+
+=== Validation Demo ===
+? What is your age? abc
+Please enter a valid number
+? What is your age? 150
+Age must be between 1 and 120
+? What is your age? 28
+Age entered: 28
+
+=== Conditional Questions Demo ===
+? Are you a developer? Yes
+? How many years of experience? 3-5 years
+  0-2 years
+❯ 3-5 years
+  6-10 years
+  10+ years
+
+[User selected: 3-5 years]
+Developer with 3-5 years of experience
+
+============================================================
+Demo completed!
+============================================================
