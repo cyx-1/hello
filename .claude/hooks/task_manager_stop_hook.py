@@ -112,7 +112,7 @@ def main():
             next_task = extract_task_description(lines[next_incomplete])
 
             response = {
-                "decision": "approve",
+                "decision": "block",
                 "reason": f"Task completed! Moving to next task: {next_task}",
                 "systemMessage": f"Please continue with the next task from plan.md: {next_task}",
             }
