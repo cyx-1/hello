@@ -2,22 +2,7 @@
 
 ## Overview
 
-This stop hook automatically manages tasks defined in `plan.md` at the project root. After each task completion, it:
-
-1. Marks the first incompleted task as done in `plan.md`
-2. Picks up the next incomplete task
-3. Continues working until all tasks are marked complete, do not ask for permission to continue onto the next task
-
-## How It Works
-
-### Execution Flow
-
-1. **After Claude finishes a response**, the stop hook executes
-2. **Finds the first incomplete task** in `plan.md` (marked with `- [ ]`)
-3. **Marks it as complete** (changes to `- [x]`)
-4. **Checks for more tasks**:
-   - If more tasks exist: Returns `continue` with the next task description
-   - If no more tasks: Approves and stops
+This stop hook automatically manages tasks defined in `plan.md` at the project root. 
 
 ### plan.md Format
 
@@ -39,27 +24,6 @@ As tasks complete, they're automatically marked:
 - [x] Task 1: Description of first task  ✅ Done
 - [ ] Task 2: Description of second task  ⬅ Next
 - [ ] Task 3: Description of third task
-```
-
-## Configuration
-
-The hook is configured in `.claude/settings.local.json`:
-
-```json
-{
-  "hooks": {
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "uv run .claude/hooks/task_manager_stop_hook.py"
-          }
-        ]
-      }
-    ]
-  }
-}
 ```
 
 ## Features
