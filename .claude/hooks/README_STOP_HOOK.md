@@ -4,7 +4,7 @@
 
 This stop hook automatically manages tasks defined in `plan.md` at the project root. After each task completion, it:
 
-1. Marks the current task as done in `plan.md`
+1. Marks the completed task as done in `plan.md`
 2. Picks up the next incomplete task
 3. Continues working until all tasks are marked complete, do not ask for permission to continue onto the next task
 
