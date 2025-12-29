@@ -114,7 +114,7 @@ def main():
             response = {
                 "decision": "approve",
                 "reason": f"Task completed! Moving to next task: {next_task}",
-                "systemMessage": f"Please continue with the next task from plan.md: {next_task}"
+                "systemMessage": f"Please continue with the next task from plan.md: {next_task}",
             }
             print(json.dumps(response))
             sys.exit(0)
