@@ -8,17 +8,5 @@
       "WebSearch",
       "Bash(git add:*)"
     ]
-  },
-  "hooks": {
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "uv run .claude/hooks/task_manager_stop_hook.py"
-          }
-        ]
-      }
-    ]
   }
 }
