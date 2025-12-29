@@ -1,0 +1,22 @@
+[2025-12-29 12:11:09] ==================================================
+[2025-12-29 12:11:09] Stop hook triggered
+[2025-12-29 12:11:09] Working directory: C:\Users\yexin\code\projects\hello
+[2025-12-29 12:11:09] Project root: C:\Users\yexin\code\projects\hello
+[2025-12-29 12:11:09] Input keys: ['session_id', 'transcript_path', 'cwd', 'permission_mode', 'hook_event_name', 'stop_hook_active']
+[2025-12-29 12:11:09] stop_hook_active: False
+[2025-12-29 12:11:09] Plan file: C:\Users\yexin\code\projects\hello\plan.md
+[2025-12-29 12:11:09] Read 7 lines from plan.md
+[2025-12-29 12:11:09] Task status: 0/3 completed
+[2025-12-29 12:11:10] First incomplete task index: 4
+[2025-12-29 12:11:10] Current task to mark complete: Task 1: compute 100 + 200 and put results into results.md
+[2025-12-29 12:11:10] Marked task 5 as complete
+[2025-12-29 12:11:10] Next incomplete task index: 5
+[2025-12-29 12:11:10] Next task: Task 2: compute 100 * 3 and put results into results.md
+[2025-12-29 12:11:10] Blocking to continue with next task
+[2025-12-29 12:11:54] ==================================================
+[2025-12-29 12:11:54] Stop hook triggered
+[2025-12-29 12:11:54] Working directory: C:\Users\yexin\code\projects\hello
+[2025-12-29 12:11:54] Project root: C:\Users\yexin\code\projects\hello
+[2025-12-29 12:11:54] Input keys: ['session_id', 'transcript_path', 'cwd', 'permission_mode', 'hook_event_name', 'stop_hook_active']
+[2025-12-29 12:11:54] stop_hook_active: True
+[2025-12-29 12:11:54] Stop hook already active, exiting to prevent recursion
