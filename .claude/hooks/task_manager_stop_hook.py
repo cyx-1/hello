@@ -117,7 +117,7 @@ def main():
                 "systemMessage": f"Please continue with the next task from plan.md: {next_task}",
             }
             print(json.dumps(response))
-            sys.exit(0)
+            sys.exit(2)
         else:
             # That was the last task!
             print(json.dumps({"decision": "approve", "reason": "Final task completed! All tasks in plan.md are now done! 🎉"}))
