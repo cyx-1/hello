@@ -4,7 +4,8 @@
       "Skill(summarize_youtube_transcript)",
       "Bash(uv run:*)",
       "Bash(ls:*)",
-      "Bash(yt-dlp:*)"
+      "Bash(yt-dlp:*)",
+      "WebSearch"
     ]
   },
   "hooks": {
