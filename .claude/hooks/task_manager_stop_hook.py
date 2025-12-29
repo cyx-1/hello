@@ -56,6 +56,7 @@ def mark_task_complete(lines, task_index):
     """Mark a task as complete by changing [ ] to [x]"""
     line = lines[task_index]
     lines[task_index] = line.replace('- [ ]', '- [x]', 1)
+    log_message("./.claude/stop_hook.log", f"Writing {lines[task_index]} on {task_index} to plan.md")
     return lines
 
 
@@ -72,6 +73,7 @@ def extract_task_description(line):
 def log_message(log_file, message):
     """Write a timestamped message to the log file"""
     from datetime import datetime
+
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(log_file, 'a') as f:
         f.write(f"[{timestamp}] {message}\n")
@@ -143,9 +145,9 @@ def main():
         log_message(log_file, f"Current task to mark complete: {current_task}")
 
         # Mark the current task as complete
-        lines = mark_task_complete(lines, incomplete_index)
+        lines = mark_task_complete(lines, incomplete_index - 1)
         write_plan(plan_file, lines)
-        log_message(log_file, f"Marked task {incomplete_index + 1} as complete")
+        log_message(log_file, f"Marked task {incomplete_index} as complete")
 
         # Check if there are more incomplete tasks
         next_incomplete = find_first_incomplete_task(lines)
@@ -161,6 +163,7 @@ def main():
                 "decision": "block",
                 "reason": f"Task completed! Moving to next task: {next_task}",
                 "systemMessage": f"Please continue with the next task from plan.md: {next_task}",
+                "stop_hook_active": False,
             }
             print(json.dumps(response))
             sys.exit(2)
@@ -173,6 +176,7 @@ def main():
     except Exception as e:
         # Log error but don't block
         import traceback
+
         error_log = project_root / ".claude" / "hook_errors.log" if project_root else Path("hook_errors.log")
         with open(error_log, 'a') as f:
             f.write(f"Stop hook error: {str(e)}\n")
