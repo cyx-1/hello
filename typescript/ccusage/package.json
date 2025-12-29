@@ -1,0 +1,27 @@
+{
+  "name": "claude-code-usage-tracker",
+  "version": "1.0.0",
+  "description": "Claude Code Usage Tracker - Monitor and analyze Claude API usage with TypeScript",
+  "main": "main_ccusage.ts",
+  "scripts": {
+    "start": "tsx main_ccusage.ts",
+    "dev": "tsx watch main_ccusage.ts",
+    "build": "tsc",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "claude",
+    "anthropic",
+    "usage",
+    "tracking",
+    "analytics",
+    "typescript"
+  ],
+  "dependencies": {
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
