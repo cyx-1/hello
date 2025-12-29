@@ -12,6 +12,7 @@ import sys
 import os
 from pathlib import Path
 
+
 def find_project_root():
     """Find the project root by looking for plan.md"""
     current = Path.cwd()
@@ -27,6 +28,7 @@ def find_project_root():
 
     return None
 
+
 def read_plan(plan_file):
     """Read the plan.md file and return its lines"""
     try:
@@ -35,10 +37,12 @@ def read_plan(plan_file):
     except FileNotFoundError:
         return None
 
+
 def write_plan(plan_file, lines):
     """Write updated lines back to plan.md"""
     with open(plan_file, 'w') as f:
         f.writelines(lines)
+
 
 def find_first_incomplete_task(lines):
     """Find the index of the first incomplete task"""
@@ -47,11 +51,13 @@ def find_first_incomplete_task(lines):
             return i
     return None
 
+
 def mark_task_complete(lines, task_index):
     """Mark a task as complete by changing [ ] to [x]"""
     line = lines[task_index]
     lines[task_index] = line.replace('- [ ]', '- [x]', 1)
     return lines
+
 
 def extract_task_description(line):
     """Extract the task description from a markdown task line"""
@@ -62,7 +68,9 @@ def extract_task_description(line):
         return line.split('- [x]', 1)[1].strip()
     return line.strip()
 
+
 def main():
+    project_root = None
     try:
         # Read JSON input from stdin
         input_data = json.loads(sys.stdin.read())
@@ -89,10 +97,7 @@ def main():
 
         if incomplete_index is None:
             # No incomplete tasks, all done!
-            print(json.dumps({
-                "decision": "approve",
-                "reason": "All tasks in plan.md have been completed! 🎉"
-            }))
+            print(json.dumps({"decision": "approve", "reason": "All tasks in plan.md have been completed! 🎉"}))
             sys.exit(0)
 
         # Mark the current task as complete
@@ -109,16 +114,13 @@ def main():
             response = {
                 "decision": "approve",
                 "reason": f"Task completed! Moving to next task: {next_task}",
-                "continue": next_task
+                "systemMessage": f"Please continue with the next task from plan.md: {next_task}"
             }
             print(json.dumps(response))
             sys.exit(0)
         else:
             # That was the last task!
-            print(json.dumps({
-                "decision": "approve",
-                "reason": "Final task completed! All tasks in plan.md are now done! 🎉"
-            }))
+            print(json.dumps({"decision": "approve", "reason": "Final task completed! All tasks in plan.md are now done! 🎉"}))
             sys.exit(0)
 
     except Exception as e:
@@ -127,6 +129,7 @@ def main():
         with open(error_log, 'a') as f:
             f.write(f"Stop hook error: {str(e)}\n")
         sys.exit(0)
+
 
 if __name__ == "__main__":
     main()

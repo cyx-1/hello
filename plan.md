@@ -2,5 +2,5 @@
 
 ## Tasks
 
-- [x] Task 1: Research on a company called Duolingo
-- [ ] Task 2: Research on a company called GE
+- [ ] Task 1: compute 100 + 100 and put results into results.md
+- [ ] Task 2: compute 10 * 3 and put results into results.md
