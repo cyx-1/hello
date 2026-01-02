@@ -14,14 +14,15 @@ Salesforce is an American cloud-based software company that provides customer re
 
 ## Annual Financial Performance
 
-| Fiscal Year | Revenue | YoY Growth | Net Income | YoY Change |
-|-------------|---------|------------|------------|------------|
-| FY 2025 (Jan 2025) | $37.9B | +9% | ~$6B (est.) | Continued growth |
-| FY 2024 (Jan 2024) | $34.857B | +11.2% | $4.14B | +1,888% |
-| FY 2023 (Jan 2023) | $31.352B | +18.4% | $208M | -86% |
-| FY 2022 (Jan 2022) | $26.49B | +25% | $1.44B | - |
+| Fiscal Year | Revenue | YoY Growth | Net Income | Operating Margin (GAAP) |
+|-------------|---------|------------|------------|-------------------------|
+| FY 2026 (Jan 2026) | $41.45B - $41.55B (guidance) | +9-10% | TBD | ~21% (Q3 FY26) |
+| FY 2025 (Jan 2025) | $37.9B | +9% | ~$6B (est.) | ~18% |
+| FY 2024 (Jan 2024) | $34.857B | +11.2% | $4.14B | ~14% |
+| FY 2023 (Jan 2023) | $31.352B | +18.4% | $208M | 3.3% |
+| FY 2022 (Jan 2022) | $26.49B | +25% | $1.44B | ~2% |
 
-**Note:** Fiscal year ends January 31. Dramatic FY2024 profit improvement due to cost-cutting measures including 8,000+ layoffs.
+**Note:** Fiscal year ends January 31. Dramatic FY2024 profit improvement due to cost-cutting measures including 8,000+ layoffs. Continued margin expansion through FY2026.
 
 ---
 
@@ -45,15 +46,26 @@ Salesforce is an American cloud-based software company that provides customer re
 | Q3 FY25 (Oct 2024) | $9.44B | +8% | Agentforce launch |
 | Q4 FY25 (Jan 2025) | $9.99B | +8% | Approaching $10B quarterly |
 
+### Fiscal Year 2026
+
+| Quarter | Revenue | YoY Growth | Operating Margin (GAAP) | Key Highlights |
+|---------|---------|------------|-------------------------|----------------|
+| Q1 FY26 (Apr 2025) | TBD | - | - | - |
+| Q2 FY26 (Jul 2025) | TBD | - | - | - |
+| Q3 FY26 (Oct 2025) | $10.3B | +9% | 21.3% | Record quarter; Agentforce momentum |
+| Q4 FY26 (Jan 2026) | $11.13B - $11.23B (guidance) | - | - | Projected first $11B+ quarter |
+
 ---
 
 ## Revenue by Geography
 
-| Region | FY 2024 Revenue | % of Total | YoY Growth |
-|--------|-----------------|------------|------------|
-| Americas | $23.29B | 67% | +10% |
-| EMEA | $8.0B | 23% | +17% |
-| Asia Pacific | $3.5B | 10% | +24% |
+| Region | FY 2025 Revenue | % of Total | FY 2024 Revenue | % of Total | YoY Growth |
+|--------|-----------------|------------|-----------------|------------|------------|
+| Americas | $25.14B | 66.4% | $23.29B | 66.8% | +7.96% |
+| Europe | $8.89B | 23.5% | $8.13B | 23.3% | +9.39% |
+| Asia Pacific | $3.86B | 10.2% | $3.44B | 9.9% | +12.24% |
+
+**Note:** Asia Pacific continues to be the highest growth region.
 
 ---
 
@@ -169,16 +181,24 @@ Salesforce is an American cloud-based software company that provides customer re
 
 ## AI and Agentforce Strategy
 
-### Agentforce (Launched 2024)
-- Autonomous AI agents for automating service tasks
-- 5,000+ organizations enrolled within months
-- ~3,000 on paid tiers
-- Focus: High-volume service automation
+### Agentforce (Launched September 2024)
+- **Autonomous AI agents** for automating service tasks across sales, service, marketing
+- **18,500+ total deals** closed (as of December 2025)
+- **9,500+ paid Agentforce deals** (50% QoQ growth in Q3 FY26)
+- **3.2 trillion tokens processed** demonstrating significant platform adoption
+- Salesforce's "fastest growing product ever"
+- Focus: High-volume service automation, customer engagement, sales acceleration
 
-### Data Cloud
-- Real-time customer data platform
+### Data Cloud & Data 360
+- Real-time customer data platform (CDP)
 - Foundation for AI personalization
-- Part of portfolio approaching $1B ARR
+- Combined with Agentforce: **$1.4B ARR** (as of Q3 FY26, +114% YoY)
+
+### AI Milestones
+- **2016:** Einstein AI launched - predictive AI platform
+- **2023:** Einstein GPT launched - generative AI for CRM
+- **2024:** Agentforce launched - autonomous AI agents
+- **2025:** Marc Benioff reports AI performs 30-50% of internal work at Salesforce
 
 ---
 
@@ -202,14 +222,27 @@ Salesforce is an American cloud-based software company that provides customer re
 
 ---
 
-## Recent Developments
+## Recent Developments (2025)
 
-- **Agentforce Launch:** AI agents automating customer service tasks
-- **Profitability Focus:** Margins improved significantly after 2023 layoffs
-- **Data Cloud Growth:** Approaching $1B ARR for AI and data products
-- **Activist Pressure:** Faced pressure from Elliott Management, ValueAct
-- **Share Buybacks:** Returning capital to shareholders
+### Q3 FY26 Highlights (December 2025)
+- **Record Revenue:** $10.3B quarterly revenue (+9% YoY)
+- **Agentforce Momentum:** 9,500+ paid deals, $1.4B combined ARR with Data 360
+- **Profitability:** GAAP operating margin of 21.3%, non-GAAP of 35.5%
+- **Strong Cash Flow:** $2.2B free cash flow in Q3 (+22% YoY)
+- **Capital Returns:** $4.2B returned to shareholders in Q3 ($3.8B buybacks, $395M dividends)
+- **Raised Guidance:** FY26 revenue guidance increased to $41.45B-$41.55B
+
+### Strategic Initiatives
+- **Agentforce Focus:** Positioning as leader in autonomous AI agents for enterprise
+- **Dreamforce 2025:** October 14-16 at Moscone Center, featuring Metallica at Dreamfest
+- **Data 360:** Unified data platform driving AI personalization
+- **Profitability:** Sustained margin expansion from 3% (FY23) to 21%+ (FY26)
+
+### Key Announcements
+- **AI Adoption:** 30-50% of internal Salesforce work now performed by AI
+- **Token Processing:** 3.2 trillion tokens processed through Agentforce platform
+- **Market Position:** Maintaining #1 CRM position with 21.7-24.3% market share
 
 ---
 
-*Last Updated: November 18, 2025*
+*Last Updated: December 31, 2025*

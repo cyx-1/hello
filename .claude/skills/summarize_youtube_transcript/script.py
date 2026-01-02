@@ -41,13 +41,20 @@ def download_subtitles(url, output_name):
     """Try to download subtitles, manual first, then auto-generated."""
     print("Attempting to download manual subtitles...")
     result = subprocess.run(
-        ["yt-dlp", "--write-sub", "--skip-download", "--output", output_name, url],
+        ["yt-dlp", "--write-sub", "--skip-download", "--sub-lang", "en", "--sub-format", "vtt", "--output", output_name, url],
         capture_output=True,
+        text=True,
     )
+
+    print(f"Manual subtitle download stdout: {result.stdout}")
+    print(f"Manual subtitle download stderr: {result.stderr}")
 
     if result.returncode == 0:
         print("[OK] Manual subtitles downloaded successfully!")
-        return True
+        # Check if file actually exists
+        vtt_file = find_vtt_file()
+        if vtt_file:
+            return True
 
     print("Manual subtitles not available. Trying auto-generated...")
     result = subprocess.run(
@@ -55,12 +62,20 @@ def download_subtitles(url, output_name):
             "yt-dlp",
             "--write-auto-sub",
             "--skip-download",
+            "--sub-lang",
+            "en",
+            "--sub-format",
+            "vtt",
             "--output",
             output_name,
             url,
         ],
         capture_output=True,
+        text=True,
     )
+
+    print(f"Auto subtitle download stdout: {result.stdout}")
+    print(f"Auto subtitle download stderr: {result.stderr}")
 
     if result.returncode == 0:
         print("[OK] Auto-generated subtitles downloaded successfully!")
