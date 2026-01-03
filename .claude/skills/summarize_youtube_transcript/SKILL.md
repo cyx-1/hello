@@ -9,7 +9,7 @@ allowed-tools: Bash,Read,Write
 ## Quick Start
 
 **Check if transcript exists first:**
-1. Look for `youtube/{Channel Name}/transcript-{Video Title}.md`
+1. Look for `youtube/{Channel Name}/transcript-{Video Title}.md` located at the root of this project
 2. **If exists**: Skip to Step 2 (Create Summary)
 3. **If not exists**: Run Step 1 (Download Transcript)
 
@@ -19,13 +19,13 @@ allowed-tools: Bash,Read,Write
 uv run script.py "YOUTUBE_URL"
 ```
 
-Creates: `youtube/{Channel Name}/transcript-{Video Title}.md`
+Creates: `youtube/{Channel Name}/transcript-{Video Title}.md` located at the root of this project
 
 ### Step 2: Create Summary
 
 1. Read the transcript file
 2. Identify main topics with start/end timestamps
-3. Create `youtube/{Channel Name}/summary-{Video Title}.md`
+3. Create `youtube/{Channel Name}/summary-{Video Title}.md` located at the root of this project
 
 Summary format:
 - Executive summary paragraph
